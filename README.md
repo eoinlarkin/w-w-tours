@@ -45,6 +45,9 @@ Feature overview
 - The images used for the gallery page were taken from this other open source site
 
 
+- Hero Image 
+[Cole Patrick](https://unsplash.com/photos/LttKJcNHzUc?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink)
+
 
 
 

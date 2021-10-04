@@ -1,0 +1,77 @@
+
+/* Clearning css and zeroing all margins, pads and borders */
+* {
+    margin: 0px;
+    padding: 0px;
+    border: none;
+}
+
+/* main menu navigation links */
+.menu {
+    font-size: 100%;
+    letter-spacing: 4px;
+    float: right; /* Floating the parent element right */
+}
+
+/* This is the logo at the top left of the page */
+.logo {
+    float: left;
+    font-size: 100%;
+    margin-left: 30px;
+}
+
+/* This will align the menu and logo elements */
+.menu, .logo {
+    line-height: 75px;
+}
+
+.menu li {
+    float: left; /* Floating the links in order */
+    list-style-type: none;
+    margin-right: 30px;
+}
+
+
+#hero-outer {
+    --height: 600px;
+    width: 100%;
+    overflow: hidden;
+
+    /* this is the parent container for the 
+    cover text; we need to set this to relative so the child
+    elements will be relative to the hero outer */
+    position: relative;
+}
+
+
+/* hero image */
+#hero-image {
+    height: 600px;
+    width: 100%;
+    background: url(../images/hero-image.jpg) no-repeat center center;
+}
+
+#hero-text h1, #hero-text h3 {
+    color: #fff;
+}
+
+#hero-text {
+    font-size: 100%;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+
+    width: 60%;
+    height: 20%;
+
+    padding-top: 5%;
+    padding-left: 10px;
+
+    background-color: rgba(138, 162, 238, 0.7);
+
+    bottom: 15%;
+    right: 15%;
+    left: 15%;
+    top: 15%;
+    position: absolute;
+}
