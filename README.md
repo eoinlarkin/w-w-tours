@@ -74,6 +74,10 @@ Code for this was taken from the following post on WC3 Schools:
 - [Link](https://www.w3schools.com/howto/howto_css_fixed_menu.asp)
 
 
+Aligning images side by side 
+
+- [Link](https://www.w3schools.com/howto/howto_css_images_side_by_side.asp)
+
 
 
 

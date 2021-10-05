@@ -143,3 +143,35 @@ body {
     margin: 1%;
     padding: 2%;
 }
+
+
+.row-two {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:rgb(110, 135, 118, 0.5);
+  }
+  
+.column-two {
+    flex: 50%;
+  }
+
+.column-two p {
+    text-align: center;   
+}
+
+
+.row-three {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:rgb(110, 135, 118, 0.5);
+  }
+  
+.column-three {
+    flex: 33%;
+  }
+
+.column-three .tour-text {
+    text-align: center;
+  }
