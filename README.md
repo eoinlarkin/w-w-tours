@@ -48,6 +48,31 @@ Feature overview
 - Hero Image 
 [Cole Patrick](https://unsplash.com/photos/LttKJcNHzUc?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink)
 
+- Hero Image:
+[Margaux Bébin](https://unsplash.com/photos/6YZ2w5NRIAg?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink)
+
+
+### Colors
+
+The palette for the website was generated using [Coolors](https://coolors.co/8bae96-3a5b85-a63d40-19180a)
+
+The colors chosen were as follows :
+- #8BAE96 Cambridge Blue
+- #3A5B85 Bdazzeled Blue
+- #A63D40 Sweet Brown
+- #19180A Black Chocolate
+
+
+**TO DO** Add link to exported image from Coolors
+
+
+### Design Elements :
+
+**Persistent Menu Bar**
+Code for this was taken from the following post on WC3 Schools:
+
+- [Link](https://www.w3schools.com/howto/howto_css_fixed_menu.asp)
+
 
 
 
