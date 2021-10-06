@@ -39,13 +39,12 @@ The project aimed to complete the following objectives:
 - Persistent menubar to be added
 - Responsive design to be fully tested and implemented
 - Website images to be resized to optimise overall performance of the site
-
+- CSS class names and styling to be cleaned up and refactored where necessary
 
 ## Nice to haves:
 
 - Hamburger menu for the main menu bar
 - Individual pages for each of the tours with a map and narrative of the route
-
 
 - - - 
 
