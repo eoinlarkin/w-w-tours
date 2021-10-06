@@ -1,19 +1,57 @@
 # Wicklow Walking Tours
 
-Project overview
+## Objective 
 
-## Features 
+The project aimed to complete the following objectives:
 
-Feature overview
+- Build a user friendly static website with a high level of compliance with modern modern CSS and HTML design principles 
+- The website would be fully responsive and work across both desktop, mobile and table devices
 
+### User Stories
+
+- **As a potential customer**
+    - I want to be able to discover what types of walking tours are offered.
+    - The information on the site should be clearly presented and easy to understand.
+    - I want to be able to access the website from both mobile and desktop devices.  
+
+- **As the site owner**
+    - I want to allow potential customers find out more about the different types of walking tours offered.
+    - I want to provide users with the ability to book tours.
+    - I want to provide users with contact information for the company.
+
+- - - 
 
 ### Features Left to Implement
 
-- Another feature idea
+## Must haves:
+
+
+**Content**
+
+- About button to be fixed
+- About content to be populated
+- Our Tours content to be created
+- Contact Us content to be created
+- Booking form webpage to be completed  
+
+**Design**
+- Hero Image layout to be improved; "Book Now" button to be implemented
+- Persistent menubar to be added
+- Responsive design to be fully tested and implemented
+- Website images to be resized to optimise overall performance of the site
+
+
+## Nice to haves:
+
+- Hamburger menu for the main menu bar
+- Individual pages for each of the tours with a map and narrative of the route
+
+
+- - - 
 
 ## Testing 
 
-
+Detail on testing 
 
 ### Validator Testing 
 
@@ -25,10 +63,12 @@ Feature overview
 ### Unfixed Bugs
 
 
+- - - 
 
 ## Deployment
 
 
+- - - 
 
 ## Credits 
 
@@ -77,7 +117,4 @@ Code for this was taken from the following post on WC3 Schools:
 Aligning images side by side 
 
 - [Link](https://www.w3schools.com/howto/howto_css_images_side_by_side.asp)
-
-
-
 
