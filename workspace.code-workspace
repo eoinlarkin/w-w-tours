@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"path": "../love_running_website"
+		},
+		{
+			"path": "../../notes/repos/udemy_advanced_css"
+		},
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "wicklow-walking-tours"
+	}
+}
