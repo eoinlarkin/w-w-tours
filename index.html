@@ -13,11 +13,14 @@
     <!-- Need to add hamburger menu here -->
 
     <header>
-        <a href="index.html">
-            <h1 class="logo">Wicklow Walking Tours</h1>
-        </a>
+
         <nav class='navbar'>
-            <ul class="menu">
+            <div class="logo">
+            <a href="index.html">Wicklow Walking Tours</a>
+            </div>
+
+            <div class="menu">
+            <ul>
                 <li>
                     <a href="index.html">Home</a>
                 </li>
@@ -28,20 +31,26 @@
                     <a href="book.html">Book</a>
                 </li>
             </ul>
+            </div>
         </nav>
     </header>
 
+
+    <div id="container">
     <div class="main">
-    <section id="hero-outer">
-        <div id="hero-image"></div>
-        <!-- Hero Image -->
-        <!-- This should scale to fill the screen -->
+    <section id="hero-outer"> <!-- Frame for Hero Image -->
+        <div class="hero-image"></div>
+        
         
         <div id="hero-text">
+            <!-- Image byline -->
             <h1>Discover beautiful guided walks in Ireland's hidden garden</h1>
-            <h3>Book a guided tour</h3>
+
+            <!-- Booking button -->
+            <a href="#" class="btn">Book a guided Tour</a>            
         </div>
     
+
     </section>
 
     <div class="section-title">-About-</div>
@@ -54,7 +63,7 @@
                 </div>
 
                 <div class="column-two">
-                  <img src="../assets/images/about-image.jpg" alt="Mountains" style="width:100%">
+                  <img src="../assets/images/about-image.jpg" alt="Mountains">
                 </div>
             </div> 
         </div>
@@ -121,7 +130,7 @@
         </footer>
     </div>    
 
-
+</div>
 
     <!-- font awesome script -->
     <script src="https://kit.fontawesome.com/d375cce442.js" crossorigin="anonymous"></script>

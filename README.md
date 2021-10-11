@@ -71,6 +71,17 @@ Detail on testing
 
 ## Credits 
 
+The code for the persistent navbar was inspired by the following post on W3 Schools
+
+- [link](https://www.w3schools.com/howto/howto_css_fixed_menu.asp)
+
+A fix for the navbar overlapping the hero image was taken from the following Stackoverflow post:
+
+- [link](https://stackoverflow.com/questions/49133277/why-is-this-hero-image-covering-the-fixed-nav-bar-with-the-nav-bar-reappearing)
+
+The following code was referenced to create the color transition
+
+- [link](https://stackoverflow.com/questions/11679567/using-css-for-a-fade-in-effect-on-page-load)
 
 ### Content 
 

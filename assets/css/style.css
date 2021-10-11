@@ -16,24 +16,38 @@ COLORS:
     border: none;
 }
 
+/* 
+.main {
+    margin-top: 10vh; /* Add a top margin to avoid content overlay */
+ /* } */
+
+body {
+    background-color:#3C3D3E;
+    color: #3C3D3E;
+    --overflow: hidden;
+}
+
+/* Starting the scrollbar under the navbar */
+/* https://stackoverflow.com/questions/29017536/bootstrap-make-vertical-browser-scrollbar-start-under-fixed-navbar-not-overla/29017945 */
+#container {
+    width: 100%;
+    position: fixed;
+    top: 10vh;
+    bottom: 0;
+    overflow: auto;
+}
 
 .navbar {
     overflow: hidden;
     background-color: #333;
     position: fixed; /* Set the navbar to fixed position */
-    top: 0; /* Position the navbar at the top of the page */
+    top: 0; /* Position the navbar at the top of the page *//* width */
     width: 100%; /* Full width */
-    z-index: 999;
+    z-index: 999; /* Setting navbar to be always on top */
+    line-height: 10vh;
   }
 
-  .main {
-    margin-top: 30px; /* Add a top margin to avoid content overlay */
-  }
 
-body {
-    background-color:#3C3D3E;
-    color: #3C3D3E;
-}
 
 /* main menu navigation links */
 
@@ -44,8 +58,14 @@ body {
     color: #FFF;
 }
 
+.menu li {
+    float: left; /* Floating the links in order */
+    list-style-type: none;
+    margin-right: 30px;
+}
+
 /* Targeting descendent links of the menu id */
-.menu a {
+.menu a, .logo a {
     text-decoration: none; /* removing the   for hyperlinks */
     color: inherit; /* Links will inherit the color from the closest parent; in this case body */
 } 
@@ -58,16 +78,13 @@ body {
     color: #FFF;
 }
 
-/* This will align the menu and logo elements */
+/* This will align the menu and logo elements
 .menu, .logo {
     line-height: 10vh;
 }
+*/
 
-.menu li {
-    float: left; /* Floating the links in order */
-    list-style-type: none;
-    margin-right: 30px;
-}
+
 
 
 #hero-outer {
@@ -83,12 +100,32 @@ body {
 
 
 /* hero image */
-#hero-image {
+.hero-image {
+    /*
     background: url(../images/hero-image.jpg) no-repeat fixed center center;
+    */
+    background-image: url(../images/hero-image.jpg);
     width: 100%;
     height: 95%;
     background-size: cover;
+    background-size: cover;
+    -webkit-animation: fadein 6s normal forwards; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 6s normal forwards; /* Firefox < 16 */
+        -ms-animation: fadein 6s normal forwards; /* Internet Explorer */
+         -o-animation: fadein 6s normal forwards; /* Opera < 12.1 */
+            animation: fadein 6s normal forwards;
 }
+
+
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+
+
 
 
 
@@ -164,6 +201,7 @@ body {
     justify-content: center;
     align-items: center;
     background-color:rgb(110, 135, 118, 0.5);
+    
   }
   
 .column-two {
@@ -173,6 +211,13 @@ body {
 .column-two p {
     text-align: center;   
 }
+
+.column-two img {
+    object-fit: cover;
+    width: 100%;
+    display: block; /*Removing the gap at bottom of image */
+}
+
 
 
 .row-three {
@@ -188,4 +233,28 @@ body {
 
 .column-three .tour-text {
     text-align: center;
+  }
+
+
+
+/* ---------------- */ 
+/* Custom Scrollbar */
+/* ---------------- */ 
+
+/* width */
+::-webkit-scrollbar {
+    width: 20px;
+    left: -100px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #8BAE96;
+    border-radius: 10px;
   }
