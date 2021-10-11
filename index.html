@@ -53,7 +53,7 @@
 
     </section>
 
-    <div class="section-title">-About-</div>
+    <div class="section-title">&lt&lt About &gt&gt</div>
     <section class="section-border">
         <div id="about">
 
@@ -71,7 +71,7 @@
     </section>
 
 
-<div class="section-title">-Our Tours-</div>
+<div class="section-title">&lt&lt Our Tours &gt&gt</div>
     <section class="section-border">
         <div id="tours">
 
@@ -103,7 +103,58 @@
         </div>
     </section>
 
-    <div class="section-title">-Contact Us-</div>
+    
+    <div class="section-title">&lt&lt Booking &gt&gt</div>
+    <section class="section-border">
+
+        <h2 class="section-heading heading">Book a Tour</h2>
+        <div id="contact-content">
+          <div class="contact-section">
+            
+            <form id="contact-form">
+              <div class="formgroup">
+                <label for="name" class="form-label">Name:</label> <input type="text" class="form-input" placeholder="Your Name" id="name" required />
+              </div>
+            
+              <div class="formgroup">
+                <label for="email" class="form-label">Email:</label> <input type="email" class="form-input" placeholder="Email address" id="email" required />
+              </div>
+            
+              <div class="formgroup">
+                <label for="phone" class="form-label">Mobile Phone:</label>
+                <input type="tel" class="form-input" placeholder="Phone Number" pattern="\d[ \d-]{8,10}\d" id="phone" required />
+              </div>
+            
+              <div class="formgroup">
+                <label for="tour" class="form-label">Tour:</label>
+                <select name="region" id="region" class="form-input" required>
+                  <option value="" disabled selected class="input-disabled">Select your tour:</option>
+                  <option value="tour1">Tour 1 Placeholder</option>
+                  <option value="tour2">Tour 2 Placeholder</option>
+                  <option value="tour3">Tour 3 Placeholder</option>
+                </select>
+              </div>
+
+              <div class="formgroup">
+                <label for="creditcard" class="form-label">Credit Card:</label>
+                <input type="tel" class="form-input" placeholder="Credit Card" pattern="\d[ \d-]{8,10}\d" id="phone" required />
+              </div>
+
+              <div class="formgroup" id="messagegroup">
+                <label for="message" class="form-label">Special Requirements:</label>
+                <textarea id="message" class="form-input" cols="30" rows="5" placeholder="Please enter any special requirements for your booking.....?" ></textarea>
+              </div>
+              <button id="form-submit" type="submit">Book</button>
+            </form>
+          </div>
+        </section>          
+
+
+
+
+
+
+    <div class="section-title">&lt&lt Contact Us &gt&gt</div>
 
     <section class="section-border">
         <p>Contact Us</p>
