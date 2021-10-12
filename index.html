@@ -9,7 +9,17 @@
 </head>
 
 <body>
-
+    /* For medium screen sizes from 950px and below */
+    @media screen and (max-width: 950px) {
+    
+        /* This floats our menu bar to the left if the screen size falls */
+        #menu {
+            clear: left;
+            float: left;
+            margin-left: 30px;
+            margin-bottom: 20px;
+            line-height: 25px
+        }
     <!-- ************ Floating Navbar ************ -->    
     <header>
         <nav class='navbar'>
@@ -31,7 +41,7 @@
                 </li>
             </ul>
             </div>
-            
+
         </nav>
     </header>
 
@@ -66,13 +76,13 @@
                     </div>
 
                     <div class="column-two">
-                    <img src="../assets/images/about-image.jpg" alt="Mountains">
+                    <img src="assets/images/about-image.jpg" alt="Mountains">
                     </div>
                 </div> 
             </div>
             
         </div>
-    </section>
+    </section>Booking Section
 
     <!-- ************ Tours Section ************ -->    
     <section>
@@ -158,13 +168,29 @@
 
 
 
+    <!-- ************ Contact Us ************ -->    
+    <section>
+        <div class="section-title">&lt&lt Contact Us &gt&gt</div>
+        <div class="section-border">
+            <div id="about">
 
+                <div class="row-two">
+                    <div class="column-two">
+                        <p>Text about the company</p>
+                    </div>
 
-    <div class="section-title">&lt&lt Contact Us &gt&gt</div>
-
-    <section class="section-border">
-        <p>Contact Us</p>
+                    <div class="column-two">
+                    <img src="../assets/images/about-image.jpg" alt="Mountains">
+                    </div>
+                </div> 
+            </div>
+            
+        </div>
     </section>
+
+
+
+
         <footer>
             <!-- Constructed through unordered links -->
             <ul class="social-networks">
