@@ -7,14 +7,13 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Wicklow Walking Tours</title>
 </head>
+
 <body>
 
-    <!-- The navigation elements -->
-    <!-- Need to add hamburger menu here -->
-
+    <!-- ************ Floating Navbar ************ -->    
     <header>
-
         <nav class='navbar'>
+
             <div class="logo">
             <a href="index.html">Wicklow Walking Tours</a>
             </div>
@@ -32,123 +31,130 @@
                 </li>
             </ul>
             </div>
+            
         </nav>
     </header>
 
 
-    <div id="container">
-    <div class="main">
+    <div id="container"> <!-- Container for content excluding nav bar -->    
+    <div class="main"> <!-- Main site content container -->
+
+    <!-- ************ Hero Image Container ************ -->    
     <section id="hero-outer"> <!-- Frame for Hero Image -->
         <div class="hero-image"></div>
         
         
-        <div id="hero-text">
+        <div class="hero-text position-on-top">
             <!-- Image byline -->
             <h1>Discover beautiful guided walks in Ireland's hidden garden</h1>
 
             <!-- Booking button -->
             <a href="#" class="btn">Book a guided Tour</a>            
         </div>
-    
-
     </section>
 
-    <div class="section-title">&lt&lt About &gt&gt</div>
-    <section class="section-border">
-        <div id="about">
 
-            <div class="row-two">
-                <div class="column-two">
-                    <p>Text about the company</p>
-                </div>
+    <!-- ************ About Section ************ -->    
+    <section>
+        <div class="section-title">&lt&lt About &gt&gt</div>
+        <div class="section-border">
+            <div id="about">
 
-                <div class="column-two">
-                  <img src="../assets/images/about-image.jpg" alt="Mountains">
-                </div>
-            </div> 
+                <div class="row-two">
+                    <div class="column-two">
+                        <p>Text about the company</p>
+                    </div>
+
+                    <div class="column-two">
+                    <img src="../assets/images/about-image.jpg" alt="Mountains">
+                    </div>
+                </div> 
+            </div>
+            
         </div>
-        
     </section>
 
+    <!-- ************ Tours Section ************ -->    
+    <section>
+        <div class="section-title">&lt&lt Our Tours &gt&gt</div>
+        <div class="section-border">
+            <div id="tours">
 
-<div class="section-title">&lt&lt Our Tours &gt&gt</div>
-    <section class="section-border">
-        <div id="tours">
-
-            <div class="row-three">
-                <div class="column-three">
-                    <div class="tour-text">                
-                        <h2>Tour 1</h2>
-                        <h3>A gentle stroll through Powerscourt waterfall</h3>
+                <div class="row-three">
+                    <div class="column-three">
+                        <div class="tour-text">                
+                            <h2>Tour 1</h2>
+                            <h3>A gentle stroll through Powerscourt waterfall</h3>
+                        </div>
                     </div>
-                </div>
 
-                <div class="column-three">
-                    <div class="tour-text">    
-                        <h2>Tour 1</h2>
-                        <h3>An intermediate hike across the Wicklow mountains</h3>
+                    <div class="column-three">
+                        <div class="tour-text">    
+                            <h2>Tour 1</h2>
+                            <h3>An intermediate hike across the Wicklow mountains</h3>
+                        </div>
                     </div>
-                </div>
 
-                <div class="column-three">
-                    <div class="tour-text">                  
-                        <h2>Tour 1</h2>
-                        <h3>A challenging hike over Glendaloguh</h3>
+                    <div class="column-three">
+                        <div class="tour-text">                  
+                            <h2>Tour 1</h2>
+                            <h3>A challenging hike over Glendaloguh</h3>
+                        </div>
                     </div>
+
                 </div>
 
             </div>
-
-
         </div>
     </section>
 
-    
-    <div class="section-title">&lt&lt Booking &gt&gt</div>
-    <section class="section-border">
+    <!-- ************ Booking Section ************ -->    
+    <section>
+        <div class="section-title">&lt&lt Booking &gt&gt</div>
+        <section class="section-border">
 
-        <h2 class="section-heading heading">Book a Tour</h2>
-        <div id="contact-content">
-          <div class="contact-section">
-            
-            <form id="contact-form">
-              <div class="formgroup">
-                <label for="name" class="form-label">Name:</label> <input type="text" class="form-input" placeholder="Your Name" id="name" required />
-              </div>
-            
-              <div class="formgroup">
-                <label for="email" class="form-label">Email:</label> <input type="email" class="form-input" placeholder="Email address" id="email" required />
-              </div>
-            
-              <div class="formgroup">
-                <label for="phone" class="form-label">Mobile Phone:</label>
-                <input type="tel" class="form-input" placeholder="Phone Number" pattern="\d[ \d-]{8,10}\d" id="phone" required />
-              </div>
-            
-              <div class="formgroup">
-                <label for="tour" class="form-label">Tour:</label>
-                <select name="region" id="region" class="form-input" required>
-                  <option value="" disabled selected class="input-disabled">Select your tour:</option>
-                  <option value="tour1">Tour 1 Placeholder</option>
-                  <option value="tour2">Tour 2 Placeholder</option>
-                  <option value="tour3">Tour 3 Placeholder</option>
-                </select>
-              </div>
+            <h2 class="section-heading heading">Book a Tour</h2>
+            <div id="contact-content">
+            <div class="contact-section">
+                
+                <form id="contact-form">
+                <div class="formgroup">
+                    <label for="name" class="form-label">Name:</label> <input type="text" class="form-input" placeholder="Your Name" id="name" required />
+                </div>
+                
+                <div class="formgroup">
+                    <label for="email" class="form-label">Email:</label> <input type="email" class="form-input" placeholder="Email address" id="email" required />
+                </div>
+                
+                <div class="formgroup">
+                    <label for="phone" class="form-label">Mobile Phone:</label>
+                    <input type="tel" class="form-input" placeholder="Phone Number" pattern="\d[ \d-]{8,10}\d" id="phone" required />
+                </div>
+                
+                <div class="formgroup">
+                    <label for="tour" class="form-label">Tour:</label>
+                    <select name="region" id="region" class="form-input" required>
+                    <option value="" disabled selected class="input-disabled">Select your tour:</option>
+                    <option value="tour1">Tour 1 Placeholder</option>
+                    <option value="tour2">Tour 2 Placeholder</option>
+                    <option value="tour3">Tour 3 Placeholder</option>
+                    </select>
+                </div>
 
-              <div class="formgroup">
-                <label for="creditcard" class="form-label">Credit Card:</label>
-                <input type="tel" class="form-input" placeholder="Credit Card" pattern="\d[ \d-]{8,10}\d" id="phone" required />
-              </div>
+                <div class="formgroup">
+                    <label for="creditcard" class="form-label">Credit Card:</label>
+                    <input type="tel" class="form-input" placeholder="Credit Card" pattern="\d[ \d-]{8,10}\d" id="phone" required />
+                </div>
 
-              <div class="formgroup" id="messagegroup">
-                <label for="message" class="form-label">Special Requirements:</label>
-                <textarea id="message" class="form-input" cols="30" rows="5" placeholder="Please enter any special requirements for your booking.....?" ></textarea>
-              </div>
-              <button id="form-submit" type="submit">Book</button>
-            </form>
-          </div>
+                <div class="formgroup" id="messagegroup">
+                    <label for="message" class="form-label">Special Requirements:</label>
+                    <textarea id="message" class="form-input" cols="30" rows="5" placeholder="Please enter any special requirements for your booking.....?" ></textarea>
+                </div>
+                <button id="form-submit" type="submit">Book</button>
+                </form>
+            </div>
         </section>          
-
+    </section>
 
 
 
