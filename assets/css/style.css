@@ -2,7 +2,7 @@
     /* Defining colors as variables */
     --color-dark: #3B3E3F;
     --color-light: #E4DEC8;
-    --color-highlight-brown: #863B1D;
+    --color-highlight-accent: #863B1D;
     --color-highlight-green: #8BAE96;
     --color-highlight-green-transparent: rgb(110, 135, 118, 0.75);
       }
@@ -19,28 +19,32 @@ body {
     color: var(--color-dark);
 }
 
+.font-color-red {
+  color: var(--color-highlight-accent) !important;
+}
+
 #map {
     height: 400px;
-    /* The height is 400 pixels */
+    /* The height is 300 pixels */
     width: 100%;
     /* The width is the width of the web page */
   }
 
   /* Link hover highlight */
 a:hover   {
-    color: yellow !important;
+    color: var(--color-highlight-green) !important;
   }
 
   .fa-instagram:hover  {
-    color: yellow !important;
+    color: var(--color-highlight-green) !important;
   }
 
   .fa-twitter:hover  {
-    color: yellow !important;
+    color: var(--color-highlight-green) !important;
   }
 
   .fa-facebook:hover  {
-    color: yellow !important;
+    color: var(--color-highlight-green) !important;
   }
 
 #container {
@@ -230,48 +234,6 @@ a:hover   {
 }
 /* **************************************** */
 
-
-
-/* **************************************** */
-/* Flexbox Configuration */
-
-.flex-parent {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    background-color: var(--color-highlight-green-transparent); 
-  }
-
-/* Flexbox Configuration for Two Rows */  
-
-.column-two {
-    flex: 50%;
-    box-sizing: border-box;
-  }
-
-.column-two p {
-    text-align: center;   
-}
-
-.column-two img {
-    object-fit: cover;
-    width: 100%;
-    display: block; /*Removing the gap at bottom of image */
-}
-
-/* Flexbox Configuration for Three Columns Rows */  
-  
-.column-three {
-    flex: 33%;
-    box-sizing: border-box;
-  }
-
-.column-three .tour-text {
-    text-align: center;
-  }
-
-
 /* **************************************** */
 /* Custom Scrollbar                         */
 
@@ -326,57 +288,22 @@ a:hover   {
 /* Test Route Code */
 /* **************************************** */
 
-.component {
-    background: white;
-    border: 2px solid #7F7CFF;
-  }
-  
-  .component__header {
-    font-size: 2em;
-    padding: 0.5em 0.75em; /* Changed padding into em */
-    background: #7F7CFF;
-    margin: 0;
-  }
-  
-  .component p {
-    padding-left: 1.5em; /* Changed padding into em */
-    padding-right: 1.5em; /* Changed padding into em */
-    margin: 1.5em 0; /* Changed margin into em */
-  }
-  
-  /* Small variant */
-  .component--small .component__header {
-    font-size: 1em;
-    padding-left: 1.5em; /* Added em-sized padding */
-    padding-right: 1.5em; /* Added em-sized padding */
-  }
-
-
-  .component {
-    /* Other styles */
-    @media (min-width: 800px) {
-      font-size: 1.5em;
-    }
-  }
-
-  .component + .component {
-    margin-top: 2rem;
-  }
-
 
   /* Test Section 2 */
+/* https://dev.to/drews256/ridiculously-easy-row-and-column-layouts-with-flexbox-1k01 */
 
+ /* Disabling word wrap on the title */ 
+.no-wrap{
+  flex-shrink: 0;
+}
 
-  .some-page-wrapper {
-    margin: 15px;
-    background-color: red;
-  }
   
   .row {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     width: 100%;
+    --flex-wrap: nowrap; /* Disabling word wrap on flexbox elements*/
   }
   
   .column {
@@ -384,16 +311,136 @@ a:hover   {
     flex-direction: column;
     flex-basis: 100%;
     flex: 1;
+    padding: 5;
+    background-color: var(--color-highlight-green);
   }
   
-  .blue-column {
+  .two-row-column {
     background-color: blue;
-    height: 100px;
+    height: 100%; /* 100px; */
+    margin: 10px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: var(--color-highlight-brown);
+    background: var(--color-light);
+  }
+
+  .one-row-column {
+    height: 100%; /* 200px; */
+    background: var(--color-light);
+    margin: 10px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: var(--color-highlight-brown);
+  }
+
+  .component-header {
+    font-size: 2em;
+    padding: 0.5em 0.75em;
+    background: var(--color-highlight-accent);
+    margin: 0;
+    color: var(--color-light);
+    flex-shrink: 0;
+  }
+
+  .column p {
+    padding-left: 1.5em; /* Changed padding into em */
+    padding-right: 1.5em; /* Changed padding into em */
+    margin: 1.5em 0; /* Changed margin into em */
+    background: var(--color-light)
+  }
+
+  .one-row-column img {
+    object-fit: cover;
+    width: 100%;
+    height: auto;
+    flex: 1;
+    display: block; /*Removing the gap at bottom of image */
+  }
+
+
+
+
+
+  /* ======= CONTACT DETAILS SECTION ======= */
+
+  .wrapper {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    max-width: 100%;
+    overflow: hidden;
   }
   
-  .green-column {
-    background-color: green;
-    height: 100px;
-    flex: 2;
+  .box {
+    color: var(--color-dark);
+    font-size: 150%;
+    background-color: var(--color-light);
+    text-align: center;
+    }
+
+
+  .flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    --padding-left: 80px;  
   }
-  
+
+/* Form Elements */
+
+
+form {
+  display: grid;
+  padding: 1em;
+  background: #f9f9f9;
+  border: 1px solid #c1c1c1;
+  margin: 2rem auto 0 auto;
+  padding: 1em;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+  box-sizing: border-box;
+}
+
+
+.full-width {
+  grid-column: 1 / 3;   
+}
+
+textarea {
+  min-width: 100%;
+}
+
+form input {
+  background: #fff;
+  border: 1px solid #9c9c9c;
+}
+
+form p {
+  margin: 0;
+}
+
+
+
+form button {
+  background: lightgrey;
+  padding: 0.7em;
+  width: 100%;
+  border: 0;
+}
+form button:hover {
+  background: gold;
+}
+
+label {
+  padding: 0.5em 0.5em 0.5em 0;
+  display: inline-block;
+}
+
+input {
+  padding: 0.7em;
+  margin-bottom: 0.5rem;
+}
+input:focus {
+  outline: 3px solid gold;
+}
+
