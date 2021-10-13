@@ -9,6 +9,15 @@ COLORS:
 */
 
 
+:root {
+    --screen-sm: 768px;
+    --screen-md: 1024px;
+    --screen-lg: 1200px;
+    --screen-xl: 1600px;
+      }
+
+
+
 /* Clearning css and zeroing all margins, pads and borders */
 * {
     margin: 0px;
@@ -26,6 +35,14 @@ body {
     color: #3C3D3E;
     --overflow: hidden;
 }
+
+
+#map {
+    height: 400px;
+    /* The height is 400 pixels */
+    width: 100%;
+    /* The width is the width of the web page */
+  }
 
 /* Starting the scrollbar under the navbar */
 /* https://stackoverflow.com/questions/29017536/bootstrap-make-vertical-browser-scrollbar-start-under-fixed-navbar-not-overla/29017945 */
@@ -212,17 +229,21 @@ body {
 
 
 /* **************************************** */
-/* Flexbox Configuration for Two Rows */
+/* Flexbox Configuration */
 
-.row-two {
+.flex-parent {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     background-color:rgb(110, 135, 118, 0.5); 
   }
-  
+
+/* Flexbox Configuration for Two Rows */  
+
 .column-two {
     flex: 50%;
+    box-sizing: border-box;
   }
 
 .column-two p {
@@ -235,25 +256,16 @@ body {
     display: block; /*Removing the gap at bottom of image */
 }
 
-/* **************************************** */
-
-
-.row-three {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color:rgb(110, 135, 118, 0.5);
-  }
+/* Flexbox Configuration for Three Columns Rows */  
   
 .column-three {
     flex: 33%;
+    box-sizing: border-box;
   }
 
 .column-three .tour-text {
     text-align: center;
   }
-
-
 
 
 /* **************************************** */
@@ -275,33 +287,14 @@ body {
   ::-webkit-scrollbar-thumb {
     background: #8BAE96;
     border-radius: 10px;
-  }/* For medium screen sizes from 950px and below */
-@media screen and (max-width: 950px) {
+  }
 
-    /* This floats our menu bar to the left if the screen size falls */
-    #menu {
-        clear: left;
-        float: left;
-        margin-left: 30px;
-        margin-bottom: 20px;
-        line-height: 25px
-    }
-
-  /* **************************************** */
+/* **************************************** */
+/* Responsive Elements */
+/* **************************************** */
 
 
-  /* For medium screen sizes from 950px and below */
-@media screen and (max-width: 950px) {
-
-    /* This floats our menu bar to the left if the screen size falls */
-    .menu {
-        clear: left;
-        float: left;
-        --margin-left: 30px;
-        --margin-bottom: 20px;
-        --line-height: 25px
-    }
-}/* For medium screen sizes from 950px and below */
+/* For medium screen sizes from 950px and below */
 @media screen and (max-width: 950px) {
 
     /* This floats our menu bar to the left if the screen size falls */
@@ -312,3 +305,14 @@ body {
         margin-bottom: 20px;
         line-height: 25px
     }
+
+    .column-three {
+        flex: 100%;
+        box-sizing: border-box;
+    }
+
+    .column-two {
+        flex: 100%;
+        box-sizing: border-box;
+    }
+}

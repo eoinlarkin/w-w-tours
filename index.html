@@ -6,6 +6,26 @@
     <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Wicklow Walking Tours</title>
+
+
+<script>
+    // Initialize and add the map
+    function initMap() {
+      // The location of Uluru
+      const uluru = { lat: -25.344, lng: 131.036 };
+      // The map, centered at Uluru
+      const map = new google.maps.Map(document.getElementById("map"), {
+        zoom: 4,
+        center: uluru,
+      });
+      // The marker, positioned at Uluru
+      const marker = new google.maps.Marker({
+        position: uluru,
+        map: map,
+      });
+    }
+  </script>
+
 </head>
 
 <body>
@@ -72,11 +92,23 @@
 
                 <div class="row-two">
                     <div class="column-two">
-                        <p>Text about the company</p>
+                        <p>Phone:</p>
+                        <p>Email:</p>
+                        <p>Address:</p>
+
+
                     </div>
 
                     <div class="column-two">
-                    <img src="assets/images/about-image.jpg" alt="Mountains">
+
+                        <div id="map"></div>
+
+                        <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
+                        <script
+                          src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCB6Cxoa3j4J0KFFIfBo1v0ty4UYbJBwyU&callback=initMap&libraries=&v=weekly"
+                          async
+                        ></script>
+
                     </div>
                 </div> 
             </div>
@@ -90,7 +122,7 @@
         <div class="section-border">
             <div id="tours">
 
-                <div class="row-three">
+                <div class="flex-parent">
                     <div class="column-three">
                         <div class="tour-text">                
                             <h2>Tour 1</h2>
@@ -174,7 +206,7 @@
         <div class="section-border">
             <div id="about">
 
-                <div class="row-two">
+                <div class="flex-parent">
                     <div class="column-two">
                         <p>Text about the company</p>
                     </div>
