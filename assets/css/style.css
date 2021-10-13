@@ -14,16 +14,10 @@
     border: none;
 }
 
-/* 
-.main {
-    margin-top: 10vh; /* Add a top margin to avoid content overlay */
- /* } */
-
 body {
     background-color: var(--color-dark);
     color: var(--color-dark);
 }
-
 
 #map {
     height: 400px;
@@ -32,9 +26,26 @@ body {
     /* The width is the width of the web page */
   }
 
-/* Starting the scrollbar under the navbar */
-/* https://stackoverflow.com/questions/29017536/bootstrap-make-vertical-browser-scrollbar-start-under-fixed-navbar-not-overla/29017945 */
+  /* Link hover highlight */
+a:hover   {
+    color: yellow !important;
+  }
+
+  .fa-instagram:hover  {
+    color: yellow !important;
+  }
+
+  .fa-twitter:hover  {
+    color: yellow !important;
+  }
+
+  .fa-facebook:hover  {
+    color: yellow !important;
+  }
+
 #container {
+    /* Starting the scrollbar under the navbar */
+    /* https://stackoverflow.com/questions/29017536/bootstrap-make-vertical-browser-scrollbar-start-under-fixed-navbar-not-overla/29017945 */
     width: 100%;
     position: fixed;
     top: 10vh;
@@ -112,6 +123,11 @@ body {
 
 /* **************************************** */
 /* Fade in Animation; cross-browser support */
+
+    @keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+    }
 
     /* Firefox < 16 */
     @-moz-keyframes fadein {
@@ -304,3 +320,80 @@ body {
         box-sizing: border-box;
     }
 }
+
+
+/* **************************************** */
+/* Test Route Code */
+/* **************************************** */
+
+.component {
+    background: white;
+    border: 2px solid #7F7CFF;
+  }
+  
+  .component__header {
+    font-size: 2em;
+    padding: 0.5em 0.75em; /* Changed padding into em */
+    background: #7F7CFF;
+    margin: 0;
+  }
+  
+  .component p {
+    padding-left: 1.5em; /* Changed padding into em */
+    padding-right: 1.5em; /* Changed padding into em */
+    margin: 1.5em 0; /* Changed margin into em */
+  }
+  
+  /* Small variant */
+  .component--small .component__header {
+    font-size: 1em;
+    padding-left: 1.5em; /* Added em-sized padding */
+    padding-right: 1.5em; /* Added em-sized padding */
+  }
+
+
+  .component {
+    /* Other styles */
+    @media (min-width: 800px) {
+      font-size: 1.5em;
+    }
+  }
+
+  .component + .component {
+    margin-top: 2rem;
+  }
+
+
+  /* Test Section 2 */
+
+
+  .some-page-wrapper {
+    margin: 15px;
+    background-color: red;
+  }
+  
+  .row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  
+  .column {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
+  }
+  
+  .blue-column {
+    background-color: blue;
+    height: 100px;
+  }
+  
+  .green-column {
+    background-color: green;
+    height: 100px;
+    flex: 2;
+  }
+  
