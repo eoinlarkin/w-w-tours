@@ -1,22 +1,11 @@
-/*
-COLORS:
-
-- #8BAE96 Cambridge Blue
-- #3A5B85 Bdazzeled Blue
-- #A63D40 Sweet Brown
-- #19180A Black Chocolate
-
-*/
-
-
 :root {
-    --screen-sm: 768px;
-    --screen-md: 1024px;
-    --screen-lg: 1200px;
-    --screen-xl: 1600px;
+    /* Defining colors as variables */
+    --color-dark: #3B3E3F;
+    --color-light: #E4DEC8;
+    --color-highlight-brown: #863B1D;
+    --color-highlight-green: #8BAE96;
+    --color-highlight-green-transparent: rgb(110, 135, 118, 0.75);
       }
-
-
 
 /* Clearning css and zeroing all margins, pads and borders */
 * {
@@ -31,9 +20,8 @@ COLORS:
  /* } */
 
 body {
-    background-color:#3C3D3E;
-    color: #3C3D3E;
-    --overflow: hidden;
+    background-color: var(--color-dark);
+    color: var(--color-dark);
 }
 
 
@@ -56,7 +44,7 @@ body {
 
 .navbar {
     overflow: hidden;
-    background-color: #333;
+    background-color: var(--color-dark);
     position: fixed; /* Set the navbar to fixed position */
     top: 0; /* Position the navbar at the top of the page *//* width */
     width: 100%; /* Full width */
@@ -72,7 +60,7 @@ body {
     font-size: 150%;
     letter-spacing: 4px;
     float: right; /* Floating the parent element right */
-    color: #FFF;
+    color:var(--color-light);
 }
 
 .menu li {
@@ -92,7 +80,7 @@ body {
     float: left;
     font-size: 200%;
     margin-left: 30px;
-    color: #FFF;
+    color:var(--color-light);
 }
 
 #hero-outer {
@@ -154,7 +142,7 @@ body {
 
 
 .hero-text h1, .hero-text h3 {
-    color: #fff;
+    color:var(--color-light);
 }
 
 .hero-text {
@@ -172,7 +160,7 @@ body {
     margin-left: 20%;
     margin-right: 20%;
 
-    background-color:rgb(110, 135, 118, 0.75);
+    background-color: var(--color-highlight-green-transparent);
 }
 
 .position-on-top {
@@ -190,7 +178,7 @@ body {
 .section-border {
     border-width: 2px;
     border-style: dashed;
-    border-color:#3A5B85;
+    border-color: var(--color-highlight-brown);
     margin: 2.5vh 12.5vw;
     padding: 2.5vh 2.5vw;
     background-color: #fff;
@@ -198,7 +186,7 @@ body {
 
 .section-title {
     padding: 15px 15px 0px 0px;
-    color:#D7CEAD;
+    color:var(--color-light);
     font-size: 250%;
     text-align: center;
     letter-spacing:5px;
@@ -220,7 +208,7 @@ body {
 /* Footer Elements - font */
 .social-networks i {
     font-size: 300%;
-    color: #fff;
+    color: var(--color-light);
     margin: 1%;
     padding: 2%;
 }
@@ -236,7 +224,7 @@ body {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    background-color:rgb(110, 135, 118, 0.5); 
+    background-color: var(--color-highlight-green-transparent); 
   }
 
 /* Flexbox Configuration for Two Rows */  
@@ -285,7 +273,7 @@ body {
   
   /* Handle */
   ::-webkit-scrollbar-thumb {
-    background: #8BAE96;
+    background: var(--color-highlight-green);
     border-radius: 10px;
   }
 
