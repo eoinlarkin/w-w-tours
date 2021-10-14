@@ -83,6 +83,16 @@ The following code was referenced to create the color transition
 
 - [link](https://stackoverflow.com/questions/11679567/using-css-for-a-fade-in-effect-on-page-load)
 
+The following code was referenced for the star icons:
+
+- [link](https://stackoverflow.com/questions/49343074/css-for-star-ratings-via-fontawesome)
+
+The following code was referenced for the creation of the gird layout:
+
+- [link](https://gridbyexample.com/examples/example2/)
+
+
+
 ### Content 
 
 - The text for the Home page was taken from Wikipedia Article A

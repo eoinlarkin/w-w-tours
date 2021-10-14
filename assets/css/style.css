@@ -465,18 +465,18 @@ input:focus {
 .wrapper-difficulty {
   display: grid;
   grid-template-columns: 10rem 10rem;
-  grid-gap: 10px;
-  background-color: #fff;
+  grid-gap: 0rem;
+  --background-color: #fff;
   color: #444;
   align-items: center;
   --justify-items: center; /* adjusted */
 }
 
 .box-difficulty {
-  background-color: #444;
-  color: #fff;
+  --background-color: #444;
+  --color: #fff;
   border-radius: 5px;
-  padding: 20px;
+  padding: 0.5rem;
   font-size: 150%;
 }
 
@@ -521,3 +521,37 @@ input:focus {
     grid-row-start: 3;
     grid-row-end: 4;
   }
+
+
+
+/* rating box with fontawesome 5 inspired from - https://stackoverflow.com/a/49343426/6908282*/
+
+.rating-box {
+  position: relative;
+  vertical-align: middle;
+  font-size: 1em; /* comment/edit this to change size */
+  font-family: FontAwesome;
+  display: inline-block;
+  color: var(--color-highlight-accent);
+}
+
+.rating-box:before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 400;
+  content: "\f005 \f005 \f005 \f005 \f005";
+}
+
+.rating-box .rating {
+  position: absolute;
+  left: 0;
+  top: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  color:var(--color-highlight-accent);
+}
+
+.rating-box .rating:before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f005 \f005 \f005 \f005 \f005";
+}
