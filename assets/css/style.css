@@ -118,11 +118,11 @@ a:hover   {
     height: 95%;
     background-size: cover;
     background-size: cover;
-    -webkit-animation: fadein 6s normal forwards; /* Safari, Chrome and Opera > 12.1 */
-       -moz-animation: fadein 6s normal forwards; /* Firefox < 16 */
-        -ms-animation: fadein 6s normal forwards; /* Internet Explorer */
-         -o-animation: fadein 6s normal forwards; /* Opera < 12.1 */
-            animation: fadein 6s normal forwards;
+    -webkit-animation: fadein 8s normal forwards; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 8s normal forwards; /* Firefox < 16 */
+        -ms-animation: fadein 8s normal forwards; /* Internet Explorer */
+         -o-animation: fadein 8s normal forwards; /* Opera < 12.1 */
+            animation: fadein 8s normal forwards;
 }
 
 

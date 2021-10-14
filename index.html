@@ -25,7 +25,7 @@
                 disableDefaultUI: true,
             });
 
-      fetch('spinc.gpx')
+      fetch('powerscourt.gpx')
                 .then(response => response.text())
                 .then(str => (new window.DOMParser()).parseFromString(str, "text/xml"))
                 //.then(data => console.log(data))
@@ -67,7 +67,7 @@
                 disableDefaultUI: true,
             });
 
-      fetch('spinc.gpx')
+      fetch('djouce.gpx')
                 .then(response => response.text())
                 .then(str => (new window.DOMParser()).parseFromString(str, "text/xml"))
                 //.then(data => console.log(data))
@@ -141,17 +141,19 @@
                 })
         }
 
+         
+
         function initMap_marker() {
-        const myLatLng = { lat: -25.363, lng: 131.044 };
+        const myLatLng = { lat: 53.17480482460448, lng: -6.292426127590039 };
         const map = new google.maps.Map(document.getElementById("map_marker"), {
-            zoom: 4,
+            zoom: 16,
             center: myLatLng,
         });
 
         new google.maps.Marker({
             position: myLatLng,
             map,
-            title: "Hello World!",
+            title: "Wicklow Walking Tours",
         });
         }
     

@@ -101,6 +101,19 @@ In order to get more than one Google Map embed working, the following post was r
 
 
 
+Trails were sourced from Wikiloc:
+
+Djouce:
+https://www.wikiloc.com/hiking-trails/djouce-mountain-ireland-402513
+
+Spinc:
+https://www.wikiloc.com/hiking-trails/glendalough-spinc-walk-79193412
+
+Powerscourt
+https://www.wikiloc.com/walking-trails/powerscourt-garden-walk-67639081
+
+
+
 
 ### Content 
 
