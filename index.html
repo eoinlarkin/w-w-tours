@@ -11,16 +11,16 @@
 <script>
     // Initialize and add the map
     function initMap() {
-      // The location of Uluru
-      const uluru = { lat: -25.344, lng: 131.036 };
-      // The map, centered at Uluru
+      // The location of the company
+      const location = {lat: 53.17446147742311, lng: -6.292444527273673 };
+      // The map, centered at our location
       const map = new google.maps.Map(document.getElementById("map"), {
-        zoom: 4,
-        center: uluru,
+        zoom: 15,
+        center: location,
       });
-      // The marker, positioned at Uluru
+      // The marker, positioned at Location
       const marker = new google.maps.Marker({
-        position: uluru,
+        position: location,
         map: map,
       });
     }
@@ -80,26 +80,28 @@
 
     <!-- ************ About Section ************ -->    
     <section>
-        <div class="section-title">&lt&lt Contact &gt&gt</div>
+        <div class="section-title">&lt&lt About Us &gt&gt</div>
         <div class="section-border">
             <div id="about">
 
             <div class="row">
                 <div class="column">
-                    <div class="one-row-column">
+                    <div class="one-row-column text-box flex">
 
-                        Test Column 1
+                        <div>
+                        <p>We are a family company and have been giving guided walking tours in the Wicklow Mountains for over 20 years</p>
+
+                        <p>Regardless of your experience or fitness we can organise a fun, challenging and healthy for you.</p>
+
+                        <p>Come discover the garden of Ireland with us !</p>
+                    </div>
 
                     </div>
                 </div>
 
                 <div class="column">
                     <div class="one-row-column">
-                        
-
                             <img src="../assets/images/about-image.jpg" alt="Mountains">
-
-
                     </div>
                 </div>
 
@@ -338,7 +340,7 @@
             </section>          
         </section>
 
-   <!-- ************ About Section ************ -->    
+   <!-- ************ Contact Us ************ -->    
    <section>
     <div class="section-title">&lt&lt Contact &gt&gt</div>
     <div class="section-border">
@@ -349,12 +351,12 @@
                 <div class="one-row-column">
 
                     <div class="wrapper">
-                        <div class="box flex"><i class="fas fa-phone"></i></div>
-                        <div class="box "><p>+ 353 404 12345</p></div>
-                        <div class="box flex"><i class="fas fa-envelope"></i></div>
-                        <div class="box"><a href="mailto:hello@wicklowwalkingtours" class="email-link"><p>hello@wicklowwalkingtours.com</p></a></div>
-                        <div class="box flex"><i class="fas fa-location-arrow"></i></div>
-                        <div class="box"><p>Old Military Rd,<br/>Ballylerane<br/> Co. Wicklow<br/></p></div>
+                        <div class="text-box flex"><i class="fas fa-phone"></i></div>
+                        <div class="text-box"><p>+ 353 404 12345</p></div>
+                        <div class="text-box flex"><i class="fas fa-envelope"></i></div>
+                        <div class="text-box"><a href="mailto:hello@wicklowwalkingtours" class="email-link"><p>hello@wicklowwalkingtours.com</p></a></div>
+                        <div class="text-box flex"><i class="fas fa-location-arrow"></i></div>
+                        <div class="text-box"><p>Old Military Rd,<br/>Ballylerane<br/> Co. Wicklow<br/></p></div>
                       </div>
 
                 </div>
