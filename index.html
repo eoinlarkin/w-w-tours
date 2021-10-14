@@ -6,160 +6,8 @@
     <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Wicklow Walking Tours</title>
-
-
-<script>
-        function initialize() {
-            initMap_route1();
-            initMap_route2();
-            initMap_route3();
-            initMap_marker();
-            }
-
-
-        function initMap_route1() {    
-            const map = new google.maps.Map(document.getElementById("map_route1"), {
-                zoom: 3,
-                center: { lat: 0, lng: -180 },
-                mapTypeId: "terrain",
-                disableDefaultUI: true,
-            });
-
-      fetch('powerscourt.gpx')
-                .then(response => response.text())
-                .then(str => (new window.DOMParser()).parseFromString(str, "text/xml"))
-                //.then(data => console.log(data))
-                .then(doc =>
-                {
-                    var points = [];
-                    var bounds = new google.maps.LatLngBounds();
-                
-                    const nodes = [...doc.getElementsByTagName('trkpt')];
-                    nodes.forEach(node =>
-                    {
-                        var lat = node.getAttribute("lat");
-                        var lon = node.getAttribute("lon");
-                        //console.log(lat);
-                        
-                        var p = new google.maps.LatLng(lat, lon);
-                        points.push(p);
-                        bounds.extend(p);
-                    })
-                    
-                    var poly = new google.maps.Polyline({
-                             path: points,
-                             strokeColor: "#863B1D",
-                             strokeOpacity: 1,
-                             strokeWeight: 4
-                        });
-                        poly.setMap(map);
-                        // fit bounds to track
-                        map.fitBounds(bounds);
-                })
-        }
-
-
-        function initMap_route2() {    
-            const map = new google.maps.Map(document.getElementById("map_route2"), {
-                zoom: 3,
-                center: { lat: 0, lng: -180 },
-                mapTypeId: "terrain",
-                disableDefaultUI: true,
-            });
-
-      fetch('djouce.gpx')
-                .then(response => response.text())
-                .then(str => (new window.DOMParser()).parseFromString(str, "text/xml"))
-                //.then(data => console.log(data))
-                .then(doc =>
-                {
-                    var points = [];
-                    var bounds = new google.maps.LatLngBounds();
-                
-                    const nodes = [...doc.getElementsByTagName('trkpt')];
-                    nodes.forEach(node =>
-                    {
-                        var lat = node.getAttribute("lat");
-                        var lon = node.getAttribute("lon");
-                        //console.log(lat);
-                        
-                        var p = new google.maps.LatLng(lat, lon);
-                        points.push(p);
-                        bounds.extend(p);
-                    })
-                    
-                    var poly = new google.maps.Polyline({
-                             path: points,
-                             strokeColor: "#863B1D",
-                             strokeOpacity: 1,
-                             strokeWeight: 4
-                        });
-                        poly.setMap(map);
-                        // fit bounds to track
-                        map.fitBounds(bounds);
-                })
-        }
-
-        function initMap_route3() {    
-            const map = new google.maps.Map(document.getElementById("map_route3"), {
-                zoom: 3,
-                center: { lat: 0, lng: -180 },
-                mapTypeId: "terrain",
-                disableDefaultUI: true,
-            });
-
-      fetch('spinc.gpx')
-                .then(response => response.text())
-                .then(str => (new window.DOMParser()).parseFromString(str, "text/xml"))
-                //.then(data => console.log(data))
-                .then(doc =>
-                {
-                    var points = [];
-                    var bounds = new google.maps.LatLngBounds();
-                
-                    const nodes = [...doc.getElementsByTagName('trkpt')];
-                    nodes.forEach(node =>
-                    {
-                        var lat = node.getAttribute("lat");
-                        var lon = node.getAttribute("lon");
-                        //console.log(lat);
-                        
-                        var p = new google.maps.LatLng(lat, lon);
-                        points.push(p);
-                        bounds.extend(p);
-                    })
-                    
-                    var poly = new google.maps.Polyline({
-                             path: points,
-                             strokeColor: "#863B1D",
-                             strokeOpacity: 1,
-                             strokeWeight: 4
-                        });
-                        poly.setMap(map);
-                        // fit bounds to track
-                        map.fitBounds(bounds);
-                })
-        }
-
-         
-
-        function initMap_marker() {
-        const myLatLng = { lat: 53.17480482460448, lng: -6.292426127590039 };
-        const map = new google.maps.Map(document.getElementById("map_marker"), {
-            zoom: 16,
-            center: myLatLng,
-        });
-
-        new google.maps.Marker({
-            position: myLatLng,
-            map,
-            title: "Wicklow Walking Tours",
-        });
-        }
-    
-  </script>
-
-<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCB6Cxoa3j4J0KFFIfBo1v0ty4UYbJBwyU&callback=initialize"></script>
+    <script src="assets/javascript/google-maps.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCB6Cxoa3j4J0KFFIfBo1v0ty4UYbJBwyU&callback=initialize"></script>
 
 </head>
 
@@ -277,14 +125,14 @@
                     <div class='row'>
                       
                         <div class='column'>
-                        <div class='two-row-column'>
+                        <div class='one-row-column'>
 
 
                                 <h2 class="component-header">Route Description</h2>
                                 <p>A gentle stroll through Powerscourt waterfall</p>
                         </div>  
 
-                        <div class='two-row-column'>
+                        <div class='one-row-column'>
                             
                                 <h2 class="component-header">Difficulty</h2>
                             
@@ -325,7 +173,7 @@
                     <div class='row'>
                       
                         <div class='column'>
-                        <div class='two-row-column'>
+                        <div class='one-row-column'>
 
 
                                 <h2 class="component-header">Route Description</h2>
@@ -334,7 +182,7 @@
 
                         </div>  
 
-                        <div class='two-row-column'>
+                        <div class='one-row-column'>
                             
                                 <h2 class="component-header">Difficulty</h2>
                                 
@@ -374,7 +222,7 @@
                     <div class='row'>
                       
                         <div class='column'>
-                        <div class='two-row-column'>
+                        <div class='one-row-column'>
 
 
                                 <h2 class="component-header">Route Description</h2>
@@ -383,7 +231,7 @@
 
                         </div>  
 
-                        <div class='two-row-column'>
+                        <div class='one-row-column'>
                             
                                 <h2 class="component-header">Difficulty</h2>
                                
@@ -434,7 +282,7 @@
             <div class="column">
                 <div class="one-row-column">
 
-                
+
                 <form>
 
                     <label for="name">Name:</label> <input type="text" class="form-input" placeholder="Your Name" id="name" required />
@@ -453,13 +301,15 @@
                     <option value="tour3">Tour 3 Placeholder</option>
                     </select>
 
-
+                    <div class="full-width">
                     <label for="message">Special Requirements:</label>
                     <textarea id="message" class="form-input" cols="30" rows="5" placeholder="Please enter any special requirements for your booking.....?" ></textarea>
+                    </div>    
 
-                    <button id="form-submit" type="submit">Book</button>
+                    <button id="form-submit" type="submit" class="full-width">Book</button>
                 
                 </form>
+ 
 
             </div> <!-- End of form div section-->
 
@@ -468,55 +318,6 @@
         </section>          
     </section>
 
-
-        <!-- ************ Booking Section ************ -->    
-        <section>
-            <div class="section-title">&lt&lt Booking &gt&gt</div>con
-            <section class="section-border">
-    
-                <h2 class="section-title font-color-red">Submit a Booking Enquiry:</h2>
-    
-                <div class="column">
-                    <div class="one-row-column">
-    
-    
-                    
-
-                        <div class="form">
-                            <form action="">
-                              <p>
-                                <label for="">Your name</label><br>
-                                <input type="text">
-                              </p>
-                              <p>
-                                <label for="">Skype</label><br>
-                                <input type="text">
-                              </p>
-                              <p>
-                                <label for="">Email Address</label><br>
-                                <input type="text">
-                              </p>
-
-                              <p>
-                                <label for="">Topic</label><br>
-                                <input type="text">
-                              </p>
-                              
-                              <p class="full-width">
-                                <label for="">Write your message</label><br>
-                                <textarea name="" id="" cols="30" rows="7"></textarea>
-                              </p>
-                              <p class="full-width">
-                                <button>Send</button>
-                              </p>
-                            </form>
-    
-                </div> <!-- End of form div section-->
-    
-
-            </div>
-            </section>          
-        </section>
 
    <!-- ************ Contact Us ************ -->    
    <section>
