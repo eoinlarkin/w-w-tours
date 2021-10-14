@@ -272,15 +272,23 @@ a:hover   {
         line-height: 25px
     }
 
-    .column-three {
-        flex: 100%;
-        box-sizing: border-box;
+    .row {
+      display: block !important;
     }
 
-    .column-two {
-        flex: 100%;
-        box-sizing: border-box;
-    }
+}
+
+
+/* For medium screen sizes from 600px and below */
+@media screen and (max-width: 600px) {
+
+  .column-40 {
+    flex-basis: 100%;
+  }
+  
+  .column-60 {
+    flex-basis: 100%;
+  }
 }
 
 
@@ -304,17 +312,25 @@ a:hover   {
     flex-wrap: wrap;
     width: 100%;
     --flex-wrap: nowrap; /* Disabling word wrap on flexbox elements*/
-  }
+}
   
   .column {
     display: flex;
     flex-direction: column;
-    flex-basis: 100%;
     flex: 1;
     padding: 5;
     background-color: var(--color-highlight-green);
   }
+
+  .column-40 {
+    flex: 0.4;
+  }
   
+  .column-60 {
+    flex: 0.6;
+  }
+
+
   .two-row-column {
     background-color: blue;
     height: 100%; /* 100px; */
