@@ -555,3 +555,35 @@ input:focus {
   font-weight: 900;
   content: "\f005 \f005 \f005 \f005 \f005";
 }
+
+
+/* CSS code for the booking button */
+
+/*
+Button element - this is a pseudoclass; when the user is interacting with the class 
+btn:visiter is for the state when we visit the button and stores that state
+*/ 
+.btn:link,
+.btn:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 15px 40px; /* Padding for top/bottom and left/right */
+    display: inline-block;
+    border-radius: 100px; /* putting in a large radius to round the corners */
+    transition: all .2s; /* animating all properties - transition property has to be on initial state*/
+}
+
+.btn:hover {
+    transform: translateY(-3px); /* making the button move up 1px*/
+    box-shadow: 0 10px 20px rgb(0,0,0,.2); /* x, y and blur values */
+}
+
+.btn:active {
+    transform: translateY(-1px); /* making the button move up 3px relative to the link state*/
+    box-shadow: 0 5px 10px rgb(0,0,0,.2); /* x, y and blur values */
+}
+
+.btn-white {
+    background-color: #FFF;
+    color:#777
+}
