@@ -23,12 +23,13 @@ body {
   color: var(--color-highlight-accent) !important;
 }
 
-#map {
+#map_marker, #map_route1, #map_route2, #map_route3{
     height: 400px;
     /* The height is 300 pixels */
     width: 100%;
     /* The width is the width of the web page */
   }
+
 
   /* Link hover highlight */
 a:hover   {
@@ -402,7 +403,7 @@ form {
   padding: 1em;
   background: #f9f9f9;
   border: 1px solid #c1c1c1;
-  margin: 2rem auto 0 auto;
+  margin: 0rem auto 0 auto;
   padding: 1em;
   grid-template-columns: 1fr 1fr;
   grid-gap: 20px;

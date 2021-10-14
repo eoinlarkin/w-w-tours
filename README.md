@@ -92,6 +92,15 @@ The following code was referenced for the creation of the gird layout:
 - [link](https://gridbyexample.com/examples/example2/)
 
 
+Google Maps GPX overlay was inspired by the following post from Stackoverflow:
+- [link](https://stackoverflow.com/questions/15829048/best-way-to-import-coordinates-from-gpx-file-and-display-using-google-maps-api)
+
+In order to get more than one Google Map embed working, the following post was referenced :
+
+- [link](https://stackoverflow.com/questions/46631141/two-google-maps-on-same-page-with-markers)
+
+
+
 
 ### Content 
 
