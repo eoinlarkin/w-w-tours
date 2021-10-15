@@ -180,10 +180,10 @@ a:hover   {
 
 .section-border {
     border-width: 2px;
-    border-style: dashed;
-    border-color: var(--color-highlight-brown);
-    margin: 2.5vh 12.5vw;
-    padding: 2.5vh 2.5vw;
+    border-style: double;
+    border-color: var(--color-highlight-green);
+    margin: 3rem 3rem;
+    padding: 1rem 1rem;
     background-color: #fff;
 }
 
@@ -234,7 +234,7 @@ a:hover   {
   
   /* Handle */
   ::-webkit-scrollbar-thumb {
-    background: var(--color-highlight-green);
+    background: var(--color);
     border-radius: 10px;
   }
 
@@ -319,7 +319,7 @@ html {
     flex-direction: column;
     flex: 1;
     padding: 5;
-    background-color: var(--color-highlight-green);
+    background-color: var(--color-highlight-green-transparent);
   }
 
   .column-40 {
@@ -396,23 +396,22 @@ html {
     text-align: center;
     font-size: 1.5rem;
     line-height: 1.5rem;
-    --overflow:hidden;
-    --text-overflow:ellipsis;
-    --word-wrap: break-word;
     }
 
 
   .text-box p {
-      overflow:hidden;
-      word-wrap: break-word;
-      word-break: break-all;
-      }
+    overflow:hidden;
+    word-wrap: break-word;
+    }
+
+  .text-box a {
+    word-break: break-all; /* Breaking email address for responsive elements */
+    }    
 
   .flex {
     display: flex;
     align-items: center;
     justify-content: center;
-    --padding-left: 80px;  
   }
 
 /* Form Elements */
