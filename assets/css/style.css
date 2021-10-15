@@ -4,8 +4,23 @@
     --color-light: #FFFBFC;
     --color-highlight-accent: #863B1D;
     --color-highlight-green: #2B8C67;
-    --color-highlight-green-transparent: #2B8C67;
+    --color-highlight-green-transparent:rgba(43, 140, 103, 0.6);
       }
+
+
+/* Setting default font size as 10px */
+html {
+  font-size: 62.5%;
+  /* Set font size to 62.5% so that 1rem = 10px for initial designing (16px / 62.5 === 10) */
+ }
+
+/* Adjust sizing so text fits on small size devices */
+@media screen and (max-width: 450px) {
+  html {
+    font-size: 57.5%;
+  }
+}
+
 
 /* Clearning css and zeroing all margins, pads and borders */
 * {
@@ -24,9 +39,10 @@ body {
 }
 
 #map_marker, #map_route1, #map_route2, #map_route3{
-    max-height: 400px;  /* The height is 400 pixels */
+    max-height: 40rem;  /* The height is 400 pixels */
     height: 75vw;
-    width: 100%;    /* The width is the width of the web page */
+    width: 100%;    
+    min-width: 20rem;
   }
 
 
@@ -35,13 +51,13 @@ a:hover   {
     color: var(--color-highlight-green) !important;
   }
   .fa-instagram:hover  {
-    color: var(--color-highlight-green) !important;
+    color: var(--color-highlight-accent) !important;
   }
   .fa-twitter:hover  {
-    color: var(--color-highlight-green) !important;
+    color: var(--color-highlight-accent) !important;
   }
   .fa-facebook:hover  {
-    color: var(--color-highlight-green) !important;
+    color: var(--color-highlight-accent) !important;
   }
 
 #container {
@@ -66,7 +82,7 @@ a:hover   {
 
 /* main menu navigation links */
 .menu {
-    font-size: 2.25rem;
+    font-size: 2.5rem;
     letter-spacing: 0.4rem;
     float: right; /* Floating the parent element right */
     color:var(--color-light);
@@ -75,7 +91,7 @@ a:hover   {
 .menu li {
     float: left; /* Floating the links in order */
     list-style-type: none;
-    margin-right: 30px;
+    margin-right: 3rem;
 }
 
 /* Targeting descendent links of the menu id */
@@ -88,7 +104,7 @@ a:hover   {
 .logo {
     float: left;
     font-size: 3rem;
-    margin-left: 30px;
+    margin-left: 3rem;
     color:var(--color-light);
 }
 
@@ -149,20 +165,26 @@ a:hover   {
 /* **************************************** */
 
 
-
+.wrapper-hero {
+  display: grid;
+  grid-template-columns: 60vw;
+  grid-gap: 0rem;
+  align-items: center;
+  justify-items: center; /* adjusted */
+}
 
 .hero-text h1, .hero-text h3 {
     color:var(--color-light);
 }
 
 .hero-text {
-    font-size: 100%;
+    font-size: 1.75rem;
     font-family: sans-serif;
     text-transform: uppercase;
     letter-spacing: 4px;
     text-align: center;
     line-height: 3rem;
-    width: 30vw;
+    width: 60vw;
 }
 
 .position-on-top {
@@ -174,7 +196,6 @@ a:hover   {
     position: absolute;
 }
 
-
 /* **************************************** */
 /* Styling the sections with borders        */
 
@@ -184,15 +205,15 @@ a:hover   {
     border-color: var(--color-highlight-green);
     margin: 3vh 8vw;
     padding: 1rem 1rem;
-    background-color: #fff;
+    background-color: var(--color-light);
 }
 
 .section-title {
-    padding: 15px 15px 0px 0px;
+    padding: 2rem 0rem 0rem 0rem;
     color:var(--color-light);
-    font-size: 250%;
+    font-size: 2.5rem;
     text-align: center;
-    letter-spacing:5px;
+    letter-spacing:0.5rem;
 }
 /* **************************************** */
 
@@ -210,7 +231,7 @@ a:hover   {
 
 /* Footer Elements - font */
 .social-networks i {
-    font-size: 300%;
+    font-size: 2rem;
     color: var(--color-light);
     margin: 1%;
     padding: 2%;
@@ -222,76 +243,22 @@ a:hover   {
 
 /* width */
 ::-webkit-scrollbar {
-    width: 20px;
+    width: 2rem;
     left: -100px;
   }
   
   /* Track */
   ::-webkit-scrollbar-track {
     box-shadow: inset 0 0 5px grey;
-    border-radius: 10px;
+    border-radius: 1rem;
   }
   
   /* Handle */
   ::-webkit-scrollbar-thumb {
-    background: var(--color);
-    border-radius: 10px;
+    background: var(--color-highlight-green);
+    border-radius: 1rem;
   }
 
-/* **************************************** */
-/* Responsive Elements */
-/* **************************************** */
-
-
-/* For medium screen sizes from 950px and below */
-
-/* Adjust sizing so text fits on iPhone 5 size devices */
-
-html {
-  font-size: 62.5%;
-  /* Set font size to 62.5% so that 1rem = 10px for initial designing (16px / 62.5 === 10) */
-  /* Original inspiration for this from Jonas Schmedtmann CSS course on Udemy */
-}
-
-/* Adjust sizing so text fits on iPhone 5 size devices */
-@media screen and (max-width: 320px) {
-  html {
-    font-size: 57.5%;
-  }
-}
-
-
-
-
-@media screen and (max-width: 950px) {
-
-    /* This floats our menu bar to the left if the screen size falls */
-    .menu {
-        clear: left;
-        float: left;
-        margin-left: 3rem;
-        margin-bottom: 2rem;
-        line-height: 2.5rem;
-    }
-
-    .row {
-      display: block !important;
-    }
-
-}
-
-
-/* For medium screen sizes from 600px and below */
-@media screen and (max-width: 600px) {
-
-  .--column-40 {
-    flex-basis: 100%;
-  }
-  
-  .--column-60 {
-    flex-basis: 100%;
-  }
-}
 
 
 /* **************************************** */
@@ -303,118 +270,146 @@ html {
   flex-shrink: 0;
 }
 
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 3rem;
+  gap: 3rem;
+  background-color: var(--color-highlight-green);
+  box-sizing: border-box;
   
-  .row {
-
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    width: 100%;
-    --flex-wrap: nowrap; /* Disabling word wrap on flexbox elements*/
-
 }
-  
-  .column {
-    display: flex;
-    flex-direction: column;
-    flex: 1;
-    padding: 5;
-    background-color: var(--color-highlight-green-transparent);
-  }
 
-  .column-40 {
-    flex: 0.35;
+.column {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  background-color: var(--color-highlight-green);    
+  gap: 3rem;
+}
+
+.row-width-medium {
+  min-width: 35vw; /* Setting minimum width for content */
+}
+
+.row-width-small {
+  min-width: 25vw; /* Setting minimum width for content */
+}
+
+.column > img {
+  width: 100%;
+  height: auto;
+  margin: auto;
+  max-height: 40rem;
+  display: block; /*Removing the gap at bottom of image */
+  min-width: 35vw; /* Setting minimum width for content */
+}
+
+
+.column-40 {
+  flex: 0.35;
   }
   
   .column-60 {
-    flex: 0.65;
+  flex: 0.65;
   }
 
-  .one-row-column {
-    height: 100%; /* 200px; */
-    background: var(--color-light);
-    margin: 1rem;
-    border-width: 1px;
-    border-style: solid;
-    border-color: var(--color-highlight-green);
-    min-width: 17.5rem; /* Setting minimum width for content */
+.one-row-column {
+  height: 100%; 
+  background: var(--color-light);
+  box-sizing: border-box;
+  flex-direction: column;
   }
+
+
 
   .component-header {
-    font-size: 2em;
-    padding: 0.5em 0.75em;
+    font-size: 2.25rem;
+    padding: 1rem 0rem 0.5rem 0rem;
     background: var(--color-highlight-green);
-    margin: 0;
+    margin: -1px; /* Fix for 1px visible of layer underneath */
     color: var(--color-light);
-    flex-shrink: 0;
+    flex-shrink: 0; 
   }
 
+.rating-height {
+  height: 25rem;
+}
+
+
   .column p {
-    padding-left: 1.5em; /* Changed padding into em */
-    padding-right: 1.5em; /* Changed padding into em */
-    margin: 1.5em 0; /* Changed margin into em */
+    padding-left: 1rem; /* Changed padding into em */
+    padding-right: 1rem; /* Changed padding into em */
+    margin: 1rem 0; /* Changed margin into em */
     background: var(--color-light)
   }
 
   .one-row-column-img {
     height: 100%; /* 200px; */
     background: var(--color-highlight-green);
-    margin: 1rem;
-    border-width: 1px;
-    min-width: 17.5rem; /* Setting minimum width for content */
+    min-width: 20rem; /* Setting minimum width for content */
     align-items: center;
     justify-content: center;
     display: flex;
   }
-
-
 
   .one-row-column-img > img {
     width: 100%;
     height: auto;
     margin: auto;
-    max-height: 400px;
+    max-height: 40rem;
     display: block; /*Removing the gap at bottom of image */
-    border-width: 1px;
-    border-style: solid;
-    border-color: var(--color-highlight-accent);
   }
 
 
   /* ======= CONTACT DETAILS SECTION ======= */
 
-  .wrapper {
+  .contact-wrapper {
     display: grid;
     grid-template-columns: 1fr 4fr;
     max-width: 100%;
     overflow: hidden;
+    justify-content: center; /* adjusted */
+    align-items: center;
+    font-size: 2rem;
   }
   
   .text-box {
+    /* Color for formatting text */
     color: var(--color-dark);
     background-color: var(--color-light);
     text-align: center;
-    font-size: 1.5rem;
-    line-height: 1.5rem;
+    font-size: 2rem;
+    line-height: 2.25rem;
+
     }
 
+.text-route-description {
+  text-align:left;
+  font-size: 2rem;
 
-  .text-box p {
-    overflow:hidden;
-    word-wrap: break-word;
-    }
-
-  .text-box a {
-    word-break: break-all; /* Breaking email address for responsive elements */
-    }    
-
-  .flex {
-    display: flex;
-    align-items: center;
-    justify-content: center;
   }
 
-/* Form Elements */
+.text-box p {
+  overflow:hidden;
+  word-wrap: break-word;
+}
+
+.text-box a {
+  word-break: break-all; /* Breaking email address for responsive elements */
+  }    
+
+.center-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  }
+
+/* **************************************** */
+/* Booking Form
+/* **************************************** */
 
 
 form {
@@ -438,7 +433,7 @@ textarea {
 }
 
 form input {
-  background: #fff;
+  background:var(--color-light);
   border: 1px solid #9c9c9c;
 }
 
@@ -469,103 +464,90 @@ input:focus {
   outline: 3px solid gold;
 }
 
-
-
+/* **************************************** */
+/* Grid Layout for Route Difficulty
+/* **************************************** */
 
 .wrapper-difficulty {
   display: grid;
   grid-template-columns: 10rem 10rem;
   grid-gap: 0rem;
-  --background-color: #fff;
-  color: #444;
   align-items: center;
   --justify-items: center; /* adjusted */
 }
 
-
-.wrapper-hero {
-  display: grid;
-  grid-template-columns: 30vw;
-  grid-gap: 0rem;
-  color: #444;
-  align-items: center;
-  justify-items: center; /* adjusted */
-}
-
-
 .box-difficulty {
-  --background-color: #444;
-  --color: #fff;
   border-radius: 5px;
   padding: 0.5rem;
-  font-size: 150%;
+  font-size: 2rem;
 }
 
+.label-distance {
+ grid-column-start: 1;
+ grid-column-end: 2;
+ grid-row-start: 1;
+ grid-row-end: 2;
+}
 
-.d {
-  grid-column-start: 1;
-  grid-column-end: 2;
+.value-distance {
+  grid-column-start: 2;
+  grid-column-end: 3;
   grid-row-start: 1;
   grid-row-end: 2;
-}
-
-
-.a {
-    grid-column-start: 2;
-    grid-column-end: 3;
-    grid-row-start: 1;
-    grid-row-end: 2;
   }
  
-  .b {
-    grid-column-start: 2;
-    grid-column-end: 3;
-    grid-row-start: 2;
-    grid-row-end: 3;
+.value-stars {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 3;
   }
-  .c {
-    grid-column-start: 2;
-    grid-column-end: 3;
-    grid-row-start: 3;
-    grid-row-end: 4;
-  }
+.value-time {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 3;
+  grid-row-end: 4;
+ }
 
-  .e {
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 2;
-    grid-row-end: 3;
-  }
-  .f {
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 3;
-    grid-row-end: 4;
-  }
+.label-difficulty {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+.lable-time {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 3;
+  grid-row-end: 4;
+}
 
-  .hero-r1c1 {
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 2;
-    grid-row-end: 3;
-    background-color: var(--color-highlight-green-transparent) !important;
+.hero-r1c1 {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  background-color: var(--color-highlight-green-transparent) !important;
+  line-height: 5rem;
 ;
-  }
-  .hero-r2c1 {
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 3;
-    grid-row-end: 4;
-  }
+}
+.hero-r2c1 {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 3;
+  grid-row-end: 4;
+}
 
-
+/* **************************************** */
+/* Difficulty Rating Code
+/* **************************************** */
 
 /* rating box with fontawesome 5 inspired from - https://stackoverflow.com/a/49343426/6908282*/
 
 .rating-box {
   position: relative;
   vertical-align: middle;
-  font-size: 1em; /* comment/edit this to change size */
+  font-size: 2rem; /* comment/edit this to change size */
   font-family: FontAwesome;
   display: inline-block;
   color: var(--color-highlight-accent);
@@ -592,34 +574,83 @@ input:focus {
   content: "\f005 \f005 \f005 \f005 \f005";
 }
 
+/* **************************************** */
+/* Booking Button 
+/* Taken from Jonas Schmedtmann's Advanced CSS Course
+/* **************************************** */
 
-/* CSS code for the booking button */
-
-/*
-Button element - this is a pseudoclass; when the user is interacting with the class 
-btn:visiter is for the state when we visit the button and stores that state
-*/ 
-.btn:link,
-.btn:visited {
+.btn:link, .btn:visited {
     text-transform: uppercase;
     text-decoration: none;
-    padding: 15px 40px; /* Padding for top/bottom and left/right */
+    padding: 0.5rem 1rem; /* Padding for top/bottom and left/right */
     display: inline-block;
-    border-radius: 100px; /* putting in a large radius to round the corners */
+    border-radius: 10rem; /* putting in a large radius to round the corners */
     transition: all .2s; /* animating all properties - transition property has to be on initial state*/
 }
 
 .btn:hover {
     transform: translateY(-3px); /* making the button move up 1px*/
-    box-shadow: 0 10px 20px rgb(0,0,0,.2); /* x, y and blur values */
+    box-shadow: 0 1rem 2rem rgb(0,0,0,.2); /* x, y and blur values */
 }
 
 .btn:active {
     transform: translateY(-1px); /* making the button move up 3px relative to the link state*/
-    box-shadow: 0 5px 10px rgb(0,0,0,.2); /* x, y and blur values */
+    box-shadow: 0 0.5rem 1rem rgb(0,0,0,.2); /* x, y and blur values */
 }
 
 .btn-white {
-    background-color: #FFF;
+    background-color:var(--color-light);
     color:#777
 }
+
+/* **************************************** */
+/* Credits, located below Footer */
+/* **************************************** */
+
+.credits {
+  padding-bottom: 2rem;
+  text-align: center;
+  color: var(--color-light);
+  font-size: 1.25rem;
+}
+
+.credits i {
+  color: var(--color-highlight-accent)
+}
+
+/* **************************************** */
+/* Responsive Elements */
+/* **************************************** */
+
+
+@media screen and (max-width: 950px) {
+/* For medium screen sizes from 950px and below */
+
+    /* This floats our menu bar to the left if the screen size falls */
+    .menu {
+        clear: left;
+        float: left;
+        margin-left: 3rem;
+        margin-bottom: 2rem;
+        line-height: 2.5rem;
+    }
+
+    .row {
+      --display: block !important;
+    }
+
+}
+
+
+@media screen and (max-width: 650px) {
+/* For medium screen sizes from 600px and below */
+
+  .column-40 {
+    flex: 1;
+  }
+  
+  .column-60 {
+    flex: 1;
+  }
+}
+
