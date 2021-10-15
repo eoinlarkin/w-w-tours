@@ -66,8 +66,8 @@ a:hover   {
 
 /* main menu navigation links */
 .menu {
-    font-size: 150%;
-    letter-spacing: 4px;
+    font-size: 2.25rem;
+    letter-spacing: 0.4rem;
     float: right; /* Floating the parent element right */
     color:var(--color-light);
 }
@@ -87,7 +87,7 @@ a:hover   {
 /* This is the logo at the top left of the page */
 .logo {
     float: left;
-    font-size: 200%;
+    font-size: 3rem;
     margin-left: 30px;
     color:var(--color-light);
 }
@@ -254,7 +254,7 @@ html {
 }
 
 /* Adjust sizing so text fits on iPhone 5 size devices */
-@media only screen and (max-width: 320px) {
+@media screen and (max-width: 320px) {
   html {
     font-size: 57.5%;
   }
@@ -269,9 +269,9 @@ html {
     .menu {
         clear: left;
         float: left;
-        margin-left: 30px;
-        margin-bottom: 20px;
-        line-height: 25px
+        margin-left: 3rem;
+        margin-bottom: 2rem;
+        line-height: 2.5rem;
     }
 
     .row {
@@ -333,11 +333,11 @@ html {
   .one-row-column {
     height: 100%; /* 200px; */
     background: var(--color-light);
-    margin: 10px;
-    border-width: 2px;
+    margin: 1rem;
+    border-width: 1px;
     border-style: solid;
-    border-color: var(--color-highlight-brown);
-    min-width: 175px; /* Setting minimum width for content */
+    border-color: var(--color-highlight-accent);
+    min-width: 17.5rem; /* Setting minimum width for content */
   }
 
   .component-header {
@@ -359,11 +359,9 @@ html {
   .one-row-column-img {
     height: 100%; /* 200px; */
     background: var(--color-highlight-green);
-    margin: 10px;
-    border-width: 2px;
-    --border-style: solid;
-    --border-color: var(--color-highlight-brown);
-    min-width: 200px; /* Setting minimum width for content */
+    margin: 1rem;
+    border-width: 1px;
+    min-width: 17.5rem; /* Setting minimum width for content */
     align-items: center;
     justify-content: center;
     display: flex;
@@ -372,18 +370,14 @@ html {
 
 
   .one-row-column-img > img {
-    --object-fit: cover;
-    --object-position: center;
     width: 100%;
     height: auto;
     margin: auto;
-    --min-width : 400px;
     max-height: 400px;
-    --flex: 1;
     display: block; /*Removing the gap at bottom of image */
-    border-width: 2px;
+    border-width: 1px;
     border-style: solid;
-    border-color: var(--color-highlight-brown);
+    border-color: var(--color-highlight-accent);
   }
 
 
