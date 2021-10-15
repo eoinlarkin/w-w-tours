@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&family=Pacifico&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Staatliches&display=swap');
 
 :root {
     /* Defining colors as variables */
@@ -38,9 +38,9 @@ html {
 }
 
 /* Screen sizing for the Galaxy Fold */
-@media screen and (max-width: 300px) {
+@media screen and (max-width: 350px) {
   html {
-    font-size: 45%;
+    font-size: 35%;
   }
 }
 
@@ -53,7 +53,7 @@ html {
     max-height: 40rem;  /* The height is 400 pixels */
     height: 75vw;
     width: 100%;    
-    min-width: 30rem;
+    min-width: 20rem;
   }
 
 
@@ -121,7 +121,7 @@ a:hover   {
     font-size: 3rem;
     margin-left: 3rem;
     color:var(--color-light);
-    font-family: 'Pacifico', cursive;;
+    font-family: 'Staatliches', cursive;
 }
 
 #hero-outer {
@@ -229,7 +229,7 @@ a:hover   {
 }
 
 .section-title {
-    padding: 2rem 0rem 0rem 0rem;
+    padding: 2rem 0rem 1rem 0rem;
     color:var(--color-light);
     font-size: 2.5rem;
     text-align: center;
