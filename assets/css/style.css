@@ -222,6 +222,7 @@ a:hover   {
     margin: 3vh 15vw;
     padding: 1rem 1rem;
     background-color: var(--color-light);
+    box-shadow: 0.5rem 1rem var(--color-highlight-accent);
 }
 
 .section-title {
