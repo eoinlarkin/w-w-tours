@@ -441,10 +441,9 @@ form input {
   background:var(--color-light);
   border: 1px solid var(--color-dark);
   padding: 0.7em;
-  font-size: 2rem;
 }
 
-form option, form select, form button{
+form input, form option, form select, form button, form label{
   font-size: 2rem;
 }
 
@@ -661,7 +660,11 @@ input:focus {
     }
 
     form {
-      grid-template-columns: 1fr 2fr;
+      grid-template-columns: minmax(0, 1fr) minmax(0, 2fr);
+    }
+
+    form input, form option, form select, form button, form label{
+      font-size: 1.5rem;
     }
 
     .full-width {
@@ -694,3 +697,10 @@ input:focus {
   }
 }
 
+@media screen and (max-width: 600px) {
+  /* For medium screen sizes from 850px and below */
+form input, form option, form select, form button, form label{
+  font-size: 1.25rem;
+}
+
+}
