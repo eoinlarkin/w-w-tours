@@ -54,7 +54,7 @@
                     <h1>Discover beautiful guided walks in Ireland's hidden garden</h1>
                 </div>
                 <div class="hero-r2c1">            
-                    <div style="text-align:center; padding-top: 20vh;">
+                    <div style="text-align:center; --justify-content:center; padding-top: 7.5vh;">
                     <span><a href="#" class="btn btn-white">Discover our tours</a>
                     </div>    
                 </div>
@@ -205,13 +205,9 @@
                       </div>
                       
                       <div class='column'>
-                        <div class='one-row-column'>
-                            
-                            
+                        <div class='one-row-column'>                                                        
                                 <h2 class="component-header">Route Map:</h2>
                                 <div id="map_route3"></div>
-
-
                         </div>
                       </div>
                     </div>
@@ -236,17 +232,15 @@
 
 
                 <form>
+                    <label for="name">Name:</label> <input type="text" placeholder="Your Name" id="name" required />
 
-                    <label for="name">Name:</label> <input type="text" class="form-input" placeholder="Your Name" id="name" required />
-
+                    <label for="email">Email:</label> <input type="email"  placeholder="Email address" id="email" required />
                 
-                    <label for="email">Email:</label> <input type="email" class="form-input" placeholder="Email address" id="email" required />
-                
-                    <label for="phone">Mobile Phone:</label>
-                    <input type="tel" class="form-input" placeholder="Phone Number" pattern="\d[ \d-]{8,10}\d" id="phone" required />
+                    <label for="phone">Mobile Phone:</label><input type="tel" class="form-input" placeholder="Phone Number" pattern="\d[ \d-]{8,10}\d" id="phone" required />
                 
                     <label for="tour">Tour:</label>
-                    <select name="region" id="region" class="form-input" required>
+                    <select name="region" id="region"  required>
+                        
                     <option value="" disabled selected class="input-disabled">Select your tour:</option>
                     <option value="tour1">Powerscourt Stroll</option>
                     <option value="tour2">Djouce Hike</option>
@@ -255,7 +249,7 @@
 
                     <div class="full-width">
                     <label for="message">Special Requirements:</label>
-                    <textarea id="message" class="form-input" cols="30" rows="5" placeholder="Please enter any special requirements for your booking.....?" ></textarea>
+                    <textarea id="message" cols="10" rows="5" placeholder="Please enter any special requirements for your booking.....?" ></textarea>
                     </div>    
 
                     <button id="form-submit" type="submit" class="full-width">Book</button>
@@ -323,8 +317,8 @@
 
             </ul>
             <div class="credits">
-            <p>Credits and attributions in README.md</p>
-            <p>Design and code by Eoin Larkin<p>
+            <p>Credits and attributions in <a href="https://github.com/eoinlarkin/wickow-walking-tours/blob/main/README.md" target="_blank" rel="noopener">README.md</a></p>
+            <p>Design and code by <a href="https://github.com/eoinlarkin/" target="_blank" rel="noopener">Eoin Larkin</a><p>
             <p>Made with <i class="fa fa-heart"></i> in D7</p>
         </div>
         </footer>

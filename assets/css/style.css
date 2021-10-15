@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&family=Pacifico&family=Roboto&display=swap');
+
 :root {
     /* Defining colors as variables */
     --color-dark: #1E566C;
@@ -6,20 +8,6 @@
     --color-highlight-green: #2B8C67;
     --color-highlight-green-transparent:rgba(43, 140, 103, 0.6);
       }
-
-
-/* Setting default font size as 10px */
-html {
-  font-size: 62.5%;
-  /* Set font size to 62.5% so that 1rem = 10px for initial designing (16px / 62.5 === 10) */
- }
-
-/* Adjust sizing so text fits on small size devices */
-@media screen and (max-width: 450px) {
-  html {
-    font-size: 57.5%;
-  }
-}
 
 
 /* Clearning css and zeroing all margins, pads and borders */
@@ -32,11 +20,34 @@ html {
 body {
     background-color: var(--color-dark);
     color: var(--color-dark);
+    font-family: 'Roboto', sans-serif;
+}
+
+
+/* Setting default font size as 10px */
+html {
+  font-size: 62.5%;
+  /* Set font size to 62.5% so that 1rem = 10px for initial designing (16px / 62.5 === 10) */
+ }
+
+/* Adjust sizing so text fits on small size devices */
+@media screen and (max-width: 450px) {
+  html {
+    font-size: 50%;
+  }
+}
+
+/* Screen sizing for the Galaxy Fold */
+@media screen and (max-width: 300px) {
+  html {
+    font-size: 45%;
+  }
 }
 
 .font-color-red {
   color: var(--color-highlight-accent) !important;
 }
+
 
 #map_marker, #map_route1, #map_route2, #map_route3{
     max-height: 40rem;  /* The height is 400 pixels */
@@ -57,6 +68,9 @@ a:hover   {
     color: var(--color-highlight-accent) !important;
   }
   .fa-facebook:hover  {
+    color: var(--color-highlight-accent) !important;
+  }
+  .credits a:hover {
     color: var(--color-highlight-accent) !important;
   }
 
@@ -86,6 +100,7 @@ a:hover   {
     letter-spacing: 0.4rem;
     float: right; /* Floating the parent element right */
     color:var(--color-light);
+    font-family: 'Roboto', sans-serif;
 }
 
 .menu li {
@@ -95,7 +110,7 @@ a:hover   {
 }
 
 /* Targeting descendent links of the menu id */
-.menu a, .logo a {
+.menu a, .logo a, .credits a{
     text-decoration: none; /* removing the   for hyperlinks */
     color: inherit; /* Links will inherit the color from the closest parent; in this case body */
 } 
@@ -106,6 +121,7 @@ a:hover   {
     font-size: 3rem;
     margin-left: 3rem;
     color:var(--color-light);
+    font-family: 'Pacifico', cursive;;
 }
 
 #hero-outer {
@@ -179,7 +195,6 @@ a:hover   {
 
 .hero-text {
     font-size: 1.75rem;
-    font-family: sans-serif;
     text-transform: uppercase;
     letter-spacing: 4px;
     text-align: center;
@@ -198,12 +213,13 @@ a:hover   {
 
 /* **************************************** */
 /* Styling the sections with borders        */
+/* **************************************** */
 
 .section-border {
     border-width: 2px;
     border-style: double;
     border-color: var(--color-highlight-green);
-    margin: 3vh 8vw;
+    margin: 3vh 15vw;
     padding: 1rem 1rem;
     background-color: var(--color-light);
 }
@@ -231,7 +247,7 @@ a:hover   {
 
 /* Footer Elements - font */
 .social-networks i {
-    font-size: 2rem;
+    font-size: 4rem;
     color: var(--color-light);
     margin: 1%;
     padding: 2%;
@@ -291,7 +307,7 @@ a:hover   {
 }
 
 .row-width-medium {
-  min-width: 35vw; /* Setting minimum width for content */
+  min-width: 25vw; /* Setting minimum width for content */
 }
 
 .row-width-small {
@@ -307,12 +323,11 @@ a:hover   {
   min-width: 35vw; /* Setting minimum width for content */
 }
 
-
 .column-40 {
   flex: 0.35;
   }
   
-  .column-60 {
+.column-60 {
   flex: 0.65;
   }
 
@@ -322,8 +337,6 @@ a:hover   {
   box-sizing: border-box;
   flex-direction: column;
   }
-
-
 
   .component-header {
     font-size: 2.25rem;
@@ -337,7 +350,6 @@ a:hover   {
 .rating-height {
   height: 25rem;
 }
-
 
   .column p {
     padding-left: 1rem; /* Changed padding into em */
@@ -412,17 +424,6 @@ a:hover   {
 /* **************************************** */
 
 
-form {
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  display: grid;
-  padding: 0px;
-  background: var(--color-light);
-  border: 1px solid #c1c1c1;
-  margin: 0rem auto 0 auto;
-  grid-gap: 1rem;
-  box-sizing: border-box;
-}
-
 
 .full-width {
   grid-column: 1 / 5;   
@@ -430,11 +431,43 @@ form {
 
 textarea {
   min-width: 100%;
+  font-size: 2rem;
+  padding: 1rem 0.2rem;
+  font-family: 'Roboto', sans-serif;
 }
 
 form input {
   background:var(--color-light);
-  border: 1px solid #9c9c9c;
+  border: 1px solid var(--color-dark);
+  padding: 0.7em;
+  font-size: 2rem;
+}
+
+form option, form select, form button{
+  font-size: 2rem;
+}
+
+
+form label {
+  background:var(--color-light);
+  padding: 0.2em;
+  vertical-align: middle;
+  align-items: center;
+  display: inline-grid;
+  color: var(--color-highlight-accent);
+}
+
+form {
+  grid-template-columns: 1fr 2fr 1fr 2fr;
+  display: grid;
+  padding: 3rem;
+  background: var(--color-highlight-green);
+  border: 1px solid var(--color-light);
+  margin: 0rem auto 0 auto;
+  box-sizing: border-box;
+  grid-gap: 3rem;
+  max-width: 100%;
+  font-size: 2rem;
 }
 
 form p {
@@ -447,19 +480,12 @@ form button {
   width: 100%;
   border: 0;
 }
+
 form button:hover {
-  background: gold;
+  background: var(--color-highlight-accent);
+  color: var(--color-light)
 }
 
-label {
-  padding: 0.5em 0.5em 0.5em 0;
-  display: inline-block;
-}
-
-input {
-  padding: 0.7em;
-  margin-bottom: 0.5rem;
-}
 input:focus {
   outline: 3px solid gold;
 }
@@ -529,13 +555,15 @@ input:focus {
   grid-row-end: 3;
   background-color: var(--color-highlight-green-transparent) !important;
   line-height: 5rem;
-;
+  max-width: 40vw;
 }
+
 .hero-r2c1 {
   grid-column-start: 1;
   grid-column-end: 2;
   grid-row-start: 3;
   grid-row-end: 4;
+  justify-content: center;
 }
 
 /* **************************************** */
@@ -623,27 +651,38 @@ input:focus {
 /* **************************************** */
 
 
-@media screen and (max-width: 950px) {
+@media screen and (max-width: 1000px) {
 /* For medium screen sizes from 950px and below */
 
     /* This floats our menu bar to the left if the screen size falls */
-    .menu {
-        clear: left;
-        float: left;
-        margin-left: 3rem;
-        margin-bottom: 2rem;
-        line-height: 2.5rem;
-    }
+
 
     .row {
       --display: block !important;
     }
 
+    form {
+      grid-template-columns: 1fr 2fr;
+    }
+
+    .full-width {
+      grid-column: 1 / 3;   
+    }
+
 }
 
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 700px) {
 /* For medium screen sizes from 600px and below */
+
+  .menu {
+    clear: left;
+    float: left;
+    margin-left: 3rem;
+    margin-bottom: 2rem;
+    line-height: 2.5rem;
+  }
+
 
   .column-40 {
     flex: 1;
@@ -652,5 +691,11 @@ input:focus {
   .column-60 {
     flex: 1;
   }
+
+  .hero-r1c1 {
+    max-width: 70vw;
+  }
+
+
 }
 
