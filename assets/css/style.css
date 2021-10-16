@@ -19,7 +19,7 @@
 
 body {
     background-color: var(--color-dark);
-    color: var(--color-dark);
+    color: var(--color-light);
     font-family: 'Roboto', sans-serif;
 }
 
@@ -336,6 +336,7 @@ a:hover   {
   background: var(--color-light);
   box-sizing: border-box;
   flex-direction: column;
+  color: var(--color-dark)
   }
 
   .component-header {
