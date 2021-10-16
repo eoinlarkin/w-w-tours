@@ -97,7 +97,7 @@ function initMap_route3() {
         disableDefaultUI: true,
     });
 
-fetch('spinc.gpx')
+fetch('https://raw.githubusercontent.com/eoinlarkin/wickow-walking-tours/main/assets/gpx/spinc.gpx')
         .then(response => response.text())
         .then(str => (new window.DOMParser()).parseFromString(str, "text/xml"))
         //.then(data => console.log(data))
