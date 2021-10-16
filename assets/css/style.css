@@ -680,9 +680,8 @@ input:focus {
 }
 
 @media screen and (max-width: 600px) {
-  /* For medium screen sizes from 850px and below */
 form input, form option, form select, form button, form label{
-  font-size: 1.25rem;
+  font-size: 1.5rem;
 }
 
   #map_marker, #map_route1, #map_route2, #map_route3{
@@ -690,13 +689,14 @@ form input, form option, form select, form button, form label{
     max-height: 52.5rem;  /* The height is 400 pixels */
     min-width: 10rem;
   }
-
-
   .section-border {
     margin: 3vh 10vw;
 }
-
-
 }
 
+@media screen and (max-width: 500px) {
+form input, form option, form select, form button, form label{
+  font-size: 1.25rem;
+  }
+}
 
