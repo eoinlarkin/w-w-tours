@@ -24,36 +24,36 @@ The project aimed to achieve the following objectives:
 
 - - - 
 
-### Features Left to Implement
-
-## Must haves:
+### User Experience
 
 
-**Content**
+## Site Layout
 
-- About button to be fixed
-- About content to be populated
-- Our Tours content to be created
-- Contact Us content to be created
-- Booking form webpage to be completed  
 
-**Design**
-- Hero Image layout to be improved; "Book Now" button to be implemented
-- Persistent menubar to be added
-- Responsive design to be fully tested and implemented
-- Website images to be resized to optimise overall performance of the site
-- CSS class names and styling to be cleaned up and refactored where necessary
+## Color Scheme
 
-## Nice to haves:
+![coolors-colors](./docs/images/palette.png)
 
-- Hamburger menu for the main menu bar
-- Individual pages for each of the tours with a map and narrative of the route
+
+
+The colors chosen were as follows :
+- #1E566C Blue Sapphire
+- #863B1D Kobe
+- #2B8C67 Sea Green
+- #FFFBFC Snow
+
+
+## Design Elements
+
+
+
 
 - - - 
 
 ## Testing 
 
 Detail on testing 
+
 
 ### Validator Testing 
 
@@ -62,22 +62,43 @@ Detail on testing
 - CSS
   - No errors were found when passing through the official [(Jigsaw) validator]
 
-### Unfixed Bugs
+### Known Bugs
 
 
 - - - 
 
-## Deployment
+### Development
 
 The following tools were used in the development:
 
+
+- **[coolors.co](https://coolors.co/)**  
+Potential site palettes were tested with Coolors.  
+
+
 - **[gauger.io](https://gauger.io/fonticon/)**  
-This was used to generate the favicon using an icon from Font Awesome.
+This website was used to generate the favicon using an icon from Font Awesome.
+
+
 
 
 - - - 
 
 ## Credits 
+
+
+
+Code for this was taken from the following post on WC3 Schools:
+
+- [Link](https://www.w3schools.com/howto/howto_css_fixed_menu.asp)
+
+
+Aligning images side by side 
+
+- [Link](https://www.w3schools.com/howto/howto_css_images_side_by_side.asp)
+
+
+
 
 The code for the persistent navbar was inspired by the following post on W3 Schools
 
@@ -125,6 +146,9 @@ Images converted with Image Magik using following insturctions:
 https://stackoverflow.com/questions/7261855/recommendation-for-compressing-jpg-files-with-imagemagick
 
 
+
+### Credits and Acknowledgements
+
 ### Content 
 
 - The text for the Home page was taken from Wikipedia Article A
@@ -137,36 +161,16 @@ https://stackoverflow.com/questions/7261855/recommendation-for-compressing-jpg-f
 - The images used for the gallery page were taken from this other open source site
 
 
-- Hero Image 
+- About Image 
 [Cole Patrick](https://unsplash.com/photos/LttKJcNHzUc?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink)
 
 - Hero Image:
 [Margaux Bébin](https://unsplash.com/photos/6YZ2w5NRIAg?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink)
 
 
-### Colors
 
-The palette for the website was generated using [Coolors](https://coolors.co/8bae96-3a5b85-a63d40-19180a)
-
-The colors chosen were as follows :
-- #8BAE96 Cambridge Blue
-- #3A5B85 Bdazzeled Blue
-- #A63D40 Sweet Brown
-- #19180A Black Chocolate
-
-
-**TO DO** Add link to exported image from Coolors
 
 
 ### Design Elements :
 
 **Persistent Menu Bar**
-Code for this was taken from the following post on WC3 Schools:
-
-- [Link](https://www.w3schools.com/howto/howto_css_fixed_menu.asp)
-
-
-Aligning images side by side 
-
-- [Link](https://www.w3schools.com/howto/howto_css_images_side_by_side.asp)
-
