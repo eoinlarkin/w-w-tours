@@ -113,6 +113,8 @@ Powerscourt
 https://www.wikiloc.com/walking-trails/powerscourt-garden-walk-67639081
 
 
+Images converted with Image Magik using following insturctions:
+https://stackoverflow.com/questions/7261855/recommendation-for-compressing-jpg-files-with-imagemagick
 
 
 ### Content 
