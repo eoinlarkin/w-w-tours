@@ -14,7 +14,7 @@ function initMap_route1() {
         disableDefaultUI: true,
     });
 
-fetch('../gpx/powerscourt.gpx')
+fetch('https://raw.githubusercontent.com/eoinlarkin/wickow-walking-tours/main/assets/gpx/powerscourt.gpx')
         .then(response => response.text())
         .then(str => (new window.DOMParser()).parseFromString(str, "text/xml"))
         //.then(data => console.log(data))
@@ -56,7 +56,7 @@ function initMap_route2() {
         disableDefaultUI: true,
     });
 
-fetch('/assets/gpx/djouce.gpx')
+fetch('https://raw.githubusercontent.com/eoinlarkin/wickow-walking-tours/main/assets/gpx/djouce.gpx')
         .then(response => response.text())
         .then(str => (new window.DOMParser()).parseFromString(str, "text/xml"))
         //.then(data => console.log(data))
