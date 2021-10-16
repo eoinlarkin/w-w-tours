@@ -182,8 +182,6 @@ a:hover   {
 /* **************************************** */
 /* Styling the hero text                    */
 /* **************************************** */
-
-
 .wrapper-hero {
   display: grid;
   grid-template-columns: 60vw;
@@ -201,7 +199,7 @@ a:hover   {
     text-transform: uppercase;
     letter-spacing: 4px;
     text-align: center;
-    line-height: 3rem;
+    line-height: 5rem;
     width: 60vw;
 }
 
@@ -484,7 +482,7 @@ form button:hover {
 }
 
 input:focus {
-  outline: 3px solid gold;
+  outline: 3px solid var(--color-highlight-accent);
 }
 
 /* **************************************** */
@@ -539,7 +537,7 @@ input:focus {
   grid-row-start: 2;
   grid-row-end: 3;
 }
-.lable-time {
+.label-time {
   grid-column-start: 1;
   grid-column-end: 2;
   grid-row-start: 3;
@@ -552,8 +550,8 @@ input:focus {
   grid-row-start: 2;
   grid-row-end: 3;
   background-color: var(--color-highlight-green-transparent) !important;
-  line-height: 5rem;
   max-width: 40vw;
+  width: 100%;
 }
 
 .hero-r2c1 {
