@@ -24,13 +24,13 @@ The project aimed to achieve the following objectives:
 
 - - - 
 
-### User Experience
+## User Experience
 
 
-## Site Layout
+### Site Layout
 
 
-## Color Scheme
+### Color Scheme
 
 ![coolors-colors](./docs/images/palette.png)
 
@@ -43,7 +43,25 @@ The colors chosen were as follows :
 - #FFFBFC Snow
 
 
-## Design Elements
+### Design Elements
+
+
+
+### Content
+
+Routes and trails for the site were sourced from [Wikiloc](https://www.wikiloc.com/). In particular:
+
+- [leondolman](https://www.wikiloc.com/hiking-trails/djouce-mountain-ireland-402513)
+
+- [Route 1](https://www.wikiloc.com/hiking-trails/glendalough-spinc-walk-79193412
+)
+
+- [Paul Martin Kelly](https://www.wikiloc.com/walking-trails/powerscourt-garden-walk-67639081)
+Djouce:
+
+
+Spinc:
+
 
 
 
@@ -85,8 +103,6 @@ The following bugs were encountered during the development and the following fix
 **Fix:** This bug was being caused by very large image sizes. The original image sizes were a combined total of over 10MB. This was reduced to under 600Kb following image resizing.  
 - - -
 
-
-
 ### Known Bugs
 
 Following testing, the following known bugs were found and remain unresolved:
@@ -97,14 +113,14 @@ I was unable to resolve the bug prior to deployment but overall it is relatively
 
 - - - 
 
-### Development
+## Development
 
-#### Languages
+### Languages
 - HTML
 - CSS
 - Javascript
 
-#### Tools / Technologies
+### Tools / Technologies
 
 - **[VScode](https://code.visualstudio.com/)**  
 All coding was completed in VS Code with a number of extensions used.
@@ -171,14 +187,7 @@ In order to get more than one Google Map embed working, the following post was r
 
 Trails were sourced from Wikiloc:
 
-Djouce:
-https://www.wikiloc.com/hiking-trails/djouce-mountain-ireland-402513
 
-Spinc:
-https://www.wikiloc.com/hiking-trails/glendalough-spinc-walk-79193412
-
-Powerscourt
-https://www.wikiloc.com/walking-trails/powerscourt-garden-walk-67639081
 
 
 Images converted with Image Magik using following insturctions:

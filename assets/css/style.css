@@ -50,10 +50,10 @@ html {
 
 
 #map_marker, #map_route1, #map_route2, #map_route3{
-    max-height: 40rem;  /* The height is 400 pixels */
+    max-height: 52.5rem;  /* The height is 400 pixels */
     height: 75vw;
     width: 100%;    
-    min-width: 20rem;
+    min-width: 35rem;
   }
 
 
@@ -118,7 +118,7 @@ a:hover   {
 /* This is the logo at the top left of the page */
 .logo {
     float: left;
-    font-size: 3rem;
+    font-size: 3.5rem;
     margin-left: 3rem;
     color:var(--color-light);
     font-family: 'Staatliches', cursive;
@@ -295,7 +295,6 @@ a:hover   {
   gap: 2rem;
   background-color: var(--color-highlight-green);
   box-sizing: border-box;
-  
 }
 
 .column {
@@ -318,9 +317,9 @@ a:hover   {
   width: 100%;
   height: auto;
   margin: auto;
-  max-height: 40rem;
+  max-height: 50rem;
   display: block; /*Removing the gap at bottom of image */
-  min-width: 35vw; /* Setting minimum width for content */
+  min-width: 37vw; /* Setting minimum width for content */
 }
 
 .column-40 {
@@ -336,7 +335,8 @@ a:hover   {
   background: var(--color-light);
   box-sizing: border-box;
   flex-direction: column;
-  color: var(--color-dark)
+  color: var(--color-dark);
+  min-width: 30rem;
   }
 
   .component-header {
@@ -352,6 +352,7 @@ a:hover   {
   height: 25rem;
 }
 
+
   .column p {
     padding-left: 1rem; /* Changed padding into em */
     padding-right: 1rem; /* Changed padding into em */
@@ -359,22 +360,8 @@ a:hover   {
     background: var(--color-light)
   }
 
-  .one-row-column-img {
-    height: 100%; /* 200px; */
-    background: var(--color-highlight-green);
-    min-width: 20rem; /* Setting minimum width for content */
-    align-items: center;
-    justify-content: center;
-    display: flex;
-  }
 
-  .one-row-column-img > img {
-    width: 100%;
-    height: auto;
-    margin: auto;
-    max-height: 40rem;
-    display: block; /*Removing the gap at bottom of image */
-  }
+
 
 /* **************************************** */
 /* Contact Details Section                  */
@@ -682,7 +669,11 @@ input:focus {
     margin-bottom: 2rem;
     line-height: 2.5rem;
   }
+}
 
+  @media screen and (max-width: 1100px) {
+    /* For medium screen sizes from 850px and below */
+    
   .column-40 {
     flex: 1;
   }
@@ -702,4 +693,18 @@ form input, form option, form select, form button, form label{
   font-size: 1.25rem;
 }
 
+  #map_marker, #map_route1, #map_route2, #map_route3{
+    max-height: 30rem;  /* The height is 400 pixels */
+    max-height: 52.5rem;  /* The height is 400 pixels */
+    min-width: 10rem;
+  }
+
+
+  .section-border {
+    margin: 3vh 10vw;
 }
+
+
+}
+
+
