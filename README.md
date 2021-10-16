@@ -2,10 +2,13 @@
 
 ## Objective 
 
-The project aimed to complete the following objectives:
+![am-i-responsive](./docs/images/am-i-responsive.png)
+
+The project aimed to achieve the following objectives:
 
 - Build a user friendly static website with a high level of compliance with modern modern CSS and HTML design principles 
 - The website would be fully responsive and work across both desktop, mobile and table devices
+- The desktop would incorporate a range of design features that would deliver an engaging and delightful experience for the end user
 
 ### User Stories
 
