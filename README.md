@@ -210,10 +210,11 @@ For generating the markdown table of contents
 
 - The following code was referenced for the creation of the gird layout: [link](https://gridbyexample.com/examples/example2/)
 
+- The following Stackoverflow post helped with the phone number validation: [link](https://stackoverflow.com/questions/123559/how-to-validate-phone-numbers-using-regex)
+
 - Google Maps GPX overlay was inspired by the following post from Stackoverflow: [link](https://stackoverflow.com/questions/15829048/best-way-to-import-coordinates-from-gpx-file-and-display-using-google-maps-api)
 
 - In order to get more than one Google Map embed working, the following post was referenced: [link](https://stackoverflow.com/questions/46631141/two-google-maps-on-same-page-with-markers)
-
 
 - Images converted with Image Magik using the following recommended settings: [link](https://stackoverflow.com/questions/7261855/recommendation-for-compressing-jpg-files-with-imagemagick)
 
