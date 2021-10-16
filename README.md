@@ -1,8 +1,8 @@
 # Wicklow Walking Tours
 
-## Objective 
-
 ![am-i-responsive](./docs/images/am-i-responsive.png)
+
+## Objective 
 
 The project aimed to achieve the following objectives:
 
@@ -68,6 +68,11 @@ Detail on testing
 - - - 
 
 ## Deployment
+
+The following tools were used in the development:
+
+- **[gauger.io](https://gauger.io/fonticon/)**  
+This was used to generate the favicon using an icon from Font Awesome.
 
 
 - - - 
