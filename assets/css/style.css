@@ -291,8 +291,8 @@ a:hover   {
   flex-direction: row;
   flex-wrap: wrap;
   width: 100%;
-  padding: 3rem;
-  gap: 3rem;
+  padding: 2rem;
+  gap: 2rem;
   background-color: var(--color-highlight-green);
   box-sizing: border-box;
   
@@ -303,7 +303,7 @@ a:hover   {
   flex-direction: column;
   flex: 1;
   background-color: var(--color-highlight-green);    
-  gap: 3rem;
+  gap: 2rem;
 }
 
 .row-width-medium {

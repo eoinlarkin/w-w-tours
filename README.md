@@ -52,9 +52,6 @@ The colors chosen were as follows :
 
 ## Testing 
 
-Detail on testing 
-
-
 ### Validator Testing 
 
 - HTML
@@ -62,6 +59,33 @@ Detail on testing
   - Three warnings were reported; these related to suggestions to add `h2-h6` header elements to the site sections; however these warnings are only advisory. 
 - CSS
   - No errors were found when passing through the official [Jigsaw validator](http://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Feoinlarkin.github.io%2Fwickow-walking-tours%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=)
+  
+### General Testing
+
+#### Performance
+Performance was tested using Lighthouse in Chrome Dev Tools. The final full reports can be found here: 
+
+- Performance issues on Desktop were highlighted with respect to the site load times. This was driven by very large image sizes and was mostly resolved by the resizing and compressing of images.
+- Performance issues on Mobile were also highlighted with respect to the site load times. In this instance, this was being driven by the importing of the images from the Google Maps API. As I was unable to resize these images, give the content was dynamic I chose to accept these performance issues. Preview of the routes was a core website feature and I did not want to compromise this over performance.
+
+
+### Bugs
+
+The following bugs were encountered during the development and the following fixes were implemented:
+
+- - -
+**Bug:** GPX route overlay did not initially work when the site was published on GitHub pages. The site had been tested locally using relative paths to the underlying GPX files but these were not being read when hosted on GitHub Pages.
+
+**Fix:** This was fixed by linking directly to the raw gpx files being hosted on GitHub as opposed to using relative paths from the javascript file. 
+- - -
+
+- - -
+**Bug:** Laggy scrolling was encountered when scrolling on both desktop and mobile. 
+
+**Fix:** This bug was being caused by very large image sizes. The original image sizes were a combined total of over 10MB. This was reduced to under 600Kb following image resizing.  
+- - -
+
+
 
 ### Known Bugs
 
@@ -84,6 +108,9 @@ I was unable to resolve the bug prior to deployment but overall it is relatively
 
 - **[VScode](https://code.visualstudio.com/)**  
 All coding was completed in VS Code with a number of extensions used.
+
+- **[Google Maps API](https://developers.google.com/maps)**  
+This was used to generate the location marker for the business address as well as being used to generate the dynamic maps with the overlaid gpx files
 
 - **[coolors.co](https://coolors.co/)**  
 Potential site palettes were tested with Coolors.  
