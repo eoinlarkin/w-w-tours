@@ -58,29 +58,41 @@ Detail on testing
 ### Validator Testing 
 
 - HTML
-  - No errors were returned when passing through the official [W3C validator]
+  - No errors were returned when passing through the official [W3C validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Feoinlarkin.github.io%2Fwickow-walking-tours%2F)
+  - Three warnings were reported; these related to suggestions to add `h2-h6` header elements to the site sections; however these warnings are only advisory. 
 - CSS
-  - No errors were found when passing through the official [(Jigsaw) validator]
+  - No errors were found when passing through the official [Jigsaw validator](http://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Feoinlarkin.github.io%2Fwickow-walking-tours%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=)
 
 ### Known Bugs
 
+Following testing, the following known bugs were found and remain unresolved:
+
+- **Text jump on initial load:**  
+On loading the site for the first time the Hero Text element will 'jump'. I suspect this is due to the way the Hero Text element has been placed using a gird overlay on the hero image and is related to the viewport recalculating after the initial load.    
+I was unable to resolve the bug prior to deployment but overall it is relatively minor and does not compromise the site integrity.
 
 - - - 
 
 ### Development
 
-The following tools were used in the development:
+#### Languages
+- HTML
+- CSS
+- Javascript
 
+#### Tools / Technologies
+
+- **[VScode](https://code.visualstudio.com/)**  
+All coding was completed in VS Code with a number of extensions used.
 
 - **[coolors.co](https://coolors.co/)**  
 Potential site palettes were tested with Coolors.  
 
-
 - **[gauger.io](https://gauger.io/fonticon/)**  
 This website was used to generate the favicon using an icon from Font Awesome.
 
-
-
+- **[ImageMagick](https://imagemagick.org/index.php)**  
+For resizing images for the improvement of site performance
 
 - - - 
 
