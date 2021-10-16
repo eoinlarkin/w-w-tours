@@ -49,20 +49,6 @@ The colors chosen were as follows :
 
 ### Content
 
-Routes and trails for the site were sourced from [Wikiloc](https://www.wikiloc.com/). In particular:
-
-- [leondolman](https://www.wikiloc.com/hiking-trails/djouce-mountain-ireland-402513)
-
-- [Route 1](https://www.wikiloc.com/hiking-trails/glendalough-spinc-walk-79193412
-)
-
-- [Paul Martin Kelly](https://www.wikiloc.com/walking-trails/powerscourt-garden-walk-67639081)
-Djouce:
-
-
-Spinc:
-
-
 
 
 
@@ -103,6 +89,18 @@ The following bugs were encountered during the development and the following fix
 **Fix:** This bug was being caused by very large image sizes. The original image sizes were a combined total of over 10MB. This was reduced to under 600Kb following image resizing.  
 - - -
 
+- - -
+**Bug:** Persistent navbar was initially overlapping the scroll bar.
+
+**Fix:** This was a design bug and was fixed by wrapping the site content in a separate container.
+- - -
+
+- - -
+**Bug:** Responsive flexbox elements were not dynamically resizing as expected with overflow of elements.
+
+**Fix:** This was an annoying bug to fix; it was being caused by the fixed width of the site elements. Finally it was fixed by setting heights and widths equal to min and max values that were defined in terms of responsive units.
+- - -
+
 ### Known Bugs
 
 Following testing, the following known bugs were found and remain unresolved:
@@ -141,84 +139,36 @@ For resizing images for the improvement of site performance
 
 ## Credits 
 
+### GPX Routes
 
-
-Code for this was taken from the following post on WC3 Schools:
-
-- [Link](https://www.w3schools.com/howto/howto_css_fixed_menu.asp)
-
-
-Aligning images side by side 
-
-- [Link](https://www.w3schools.com/howto/howto_css_images_side_by_side.asp)
-
-
-
-
-The code for the persistent navbar was inspired by the following post on W3 Schools
-
-- [link](https://www.w3schools.com/howto/howto_css_fixed_menu.asp)
-
-A fix for the navbar overlapping the hero image was taken from the following Stackoverflow post:
-
-- [link](https://stackoverflow.com/questions/49133277/why-is-this-hero-image-covering-the-fixed-nav-bar-with-the-nav-bar-reappearing)
-
-The following code was referenced to create the color transition
-
-- [link](https://stackoverflow.com/questions/11679567/using-css-for-a-fade-in-effect-on-page-load)
-
-The following code was referenced for the star icons:
-
-- [link](https://stackoverflow.com/questions/49343074/css-for-star-ratings-via-fontawesome)
-
-The following code was referenced for the creation of the gird layout:
-
-- [link](https://gridbyexample.com/examples/example2/)
-
-
-Google Maps GPX overlay was inspired by the following post from Stackoverflow:
-- [link](https://stackoverflow.com/questions/15829048/best-way-to-import-coordinates-from-gpx-file-and-display-using-google-maps-api)
-
-In order to get more than one Google Map embed working, the following post was referenced :
-
-- [link](https://stackoverflow.com/questions/46631141/two-google-maps-on-same-page-with-markers)
-
-
-
-Trails were sourced from Wikiloc:
-
-
-
-
-Images converted with Image Magik using following insturctions:
-https://stackoverflow.com/questions/7261855/recommendation-for-compressing-jpg-files-with-imagemagick
-
-
-
-### Credits and Acknowledgements
-
-### Content 
-
-- The text for the Home page was taken from Wikipedia Article A
-- Instructions on how to implement form validation on the Sign Up page was taken from [Specific YouTube Tutorial](https://www.youtube.com/)
-- The icons in the footer were taken from [Font Awesome](https://fontawesome.com/)
+  - [leondolman](https://www.wikiloc.com/hiking-trails/djouce-mountain-ireland-402513)
+  - [macbre.pl](https://www.wikiloc.com/hiking-trails/glendalough-spinc-walk-79193412)
+  - [Paul Martin Kelly](https://www.wikiloc.com/walking-trails/powerscourt-garden-walk-67639081)  
 
 ### Media
 
-- The photos used on the home and sign up page are from This Open Source site
-- The images used for the gallery page were taken from this other open source site
+- Images were sourced from [Unsplash](https://unsplash.com/). In particular:  
+
+  - About Image: [Cole Patrick](https://unsplash.com/photos/LttKJcNHzUc?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink)
+
+  - Hero Image: [Margaux Bébin](https://unsplash.com/photos/6YZ2w5NRIAg?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink)
+
+### Code Attribution
+
+- The code for the persistent navbar was inspired by the following post on W3 Schools: [link](https://www.w3schools.com/howto/howto_css_fixed_menu.asp)
+
+- A fix for the navbar overlapping the hero image was taken from the following Stackoverflow post: [link](https://stackoverflow.com/questions/49133277/why-is-this-hero-image-covering-the-fixed-nav-bar-with-the-nav-bar-reappearing)
+
+- The following code was referenced to create the color transition: [link](https://stackoverflow.com/questions/11679567/using-css-for-a-fade-in-effect-on-page-load)
+
+- The following code was referenced for the star icons: [link](https://stackoverflow.com/questions/49343074/css-for-star-ratings-via-fontawesome)
+
+- The following code was referenced for the creation of the gird layout: [link](https://gridbyexample.com/examples/example2/)
+
+- Google Maps GPX overlay was inspired by the following post from Stackoverflow: [link](https://stackoverflow.com/questions/15829048/best-way-to-import-coordinates-from-gpx-file-and-display-using-google-maps-api)
+
+- In order to get more than one Google Map embed working, the following post was referenced: [link](https://stackoverflow.com/questions/46631141/two-google-maps-on-same-page-with-markers)
 
 
-- About Image 
-[Cole Patrick](https://unsplash.com/photos/LttKJcNHzUc?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink)
+- Images converted with Image Magik using the following recommended settings: [link](https://stackoverflow.com/questions/7261855/recommendation-for-compressing-jpg-files-with-imagemagick)
 
-- Hero Image:
-[Margaux Bébin](https://unsplash.com/photos/6YZ2w5NRIAg?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink)
-
-
-
-
-
-### Design Elements :
-
-**Persistent Menu Bar**

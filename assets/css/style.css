@@ -309,10 +309,6 @@ a:hover   {
   min-width: 25vw; /* Setting minimum width for content */
 }
 
-.row-width-small {
-  min-width: 25vw; /* Setting minimum width for content */
-}
-
 .column > img {
   width: 100%;
   height: auto;
@@ -339,29 +335,25 @@ a:hover   {
   min-width: 30rem;
   }
 
-  .component-header {
-    font-size: 2.25rem;
-    padding: 1rem 0rem 0.5rem 0rem;
-    background: var(--color-highlight-green);
-    margin: -1px; /* Fix for 1px visible of layer underneath */
-    color: var(--color-light);
-    flex-shrink: 0; 
-  }
+.component-header {
+  font-size: 2.25rem;
+  padding: 1rem 0rem 0.5rem 0rem;
+  background: var(--color-highlight-green);
+  margin: -1px; /* Fix for 1px visible of layer underneath */
+  color: var(--color-light);
+  flex-shrink: 0; 
+}
 
 .rating-height {
   height: 25rem;
 }
 
-
-  .column p {
-    padding-left: 1rem; /* Changed padding into em */
-    padding-right: 1rem; /* Changed padding into em */
-    margin: 1rem 0; /* Changed margin into em */
-    background: var(--color-light)
-  }
-
-
-
+.column p {
+  padding-left: 1rem; /* Changed padding into em */
+  padding-right: 1rem; /* Changed padding into em */
+  margin: 1rem 0; /* Changed margin into em */
+  background: var(--color-light)
+}
 
 /* **************************************** */
 /* Contact Details Section                  */
