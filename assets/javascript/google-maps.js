@@ -14,7 +14,7 @@ function initMap_route1() {
         disableDefaultUI: true,
     });
 
-fetch('../assets/gpx/powerscourt.gpx')
+fetch('./assets/gpx/powerscourt.gpx')
         .then(response => response.text())
         .then(str => (new window.DOMParser()).parseFromString(str, "text/xml"))
         //.then(data => console.log(data))
@@ -56,7 +56,7 @@ function initMap_route2() {
         disableDefaultUI: true,
     });
 
-fetch('../assets/gpx/djouce.gpx')
+fetch('./assets/gpx/djouce.gpx')
         .then(response => response.text())
         .then(str => (new window.DOMParser()).parseFromString(str, "text/xml"))
         //.then(data => console.log(data))
@@ -97,7 +97,7 @@ function initMap_route3() {
         disableDefaultUI: true,
     });
 
-fetch('../assets/gpx/spinc.gpx')
+fetch('./assets/gpx/spinc.gpx')
         .then(response => response.text())
         .then(str => (new window.DOMParser()).parseFromString(str, "text/xml"))
         //.then(data => console.log(data))
