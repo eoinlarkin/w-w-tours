@@ -698,5 +698,13 @@ form input, form option, form select, form button, form label{
 form input, form option, form select, form button, form label{
   font-size: 1.25rem;
   }
+
+/* Setting the max width of the flexbox elements
+On smaller resolution screens, the default size results in element overflow */  
+.one-row-column {
+  min-width: 20rem;
+  }
+
+
 }
 
